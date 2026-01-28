@@ -1,0 +1,3096 @@
+[
+    {
+        "id": 1,
+        "topic": 1,
+        "questionNumber": 1,
+        "type": "multiple-choice",
+        "question": "A company employs a team of customer service agents to provide telephone and email support to customers.\nThe company develops a webchat bot to provide automated answers to common customer queries.\nWhich business benefit should the company expect as a result of creating the webchat bot solution?",
+        "options": [
+            "A. increased sales",
+            "B. a reduced workload for the customer service agents",
+            "C. improved product reliability"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 2,
+        "topic": 1,
+        "questionNumber": 2,
+        "type": "multiple-choice",
+        "question": "For a machine learning progress, how should you split data for training and evaluation?",
+        "options": [
+            "A. Use features for training and labels for evaluation.",
+            "B. Randomly split the data into rows for training and rows for evaluation.",
+            "C. Use labels for training and features for evaluation.",
+            "D. Randomly split the data into columns for training and columns for evaluation."
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 3,
+        "topic": 1,
+        "questionNumber": 3,
+        "type": "unknown",
+        "question": "HOTSPOT -\nYou are developing a model to predict events by using classification.\nYou have a confusion matrix for the model scored on test data as shown in the following exhibit.\nUse the drop-down menus to select the answer choice that completes each statement based on the information presented in the\ngraphic.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Box 1: 11 -",
+        "explanation": "TP = True Positive.\nThe class labels in the training set can take on only two possible values, which we usually refer to as positive or negative. The\npositive and negative instances that a classifier predicts correctly are called true positives (TP) and true negatives (TN),\nrespectively. Similarly, the incorrectly classified instances are called false positives (FP) and false negatives (FN).\nBox 2: 1,033 -\nFN = False Negative -\nReference:\nhttps://docs.microsoft.com/en-us/azure/machine-learning/studio/evaluate-model-performance"
+    },
+    {
+        "id": 4,
+        "topic": 1,
+        "questionNumber": 4,
+        "type": "multiple-choice",
+        "question": "You build a machine learning model by using the automated machine learning user interface (UI).\nYou need to ensure that the model meets the Microsoft transparency principle for responsible AI.\nWhat should you do?",
+        "options": [
+            "A. Set Validation type to Auto.",
+            "B. Enable Explain best model.",
+            "C. Set Primary metric to accuracy.",
+            "D. Set Max concurrent iterations to 0."
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 5,
+        "topic": 1,
+        "questionNumber": 5,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Anomaly detection encompasses many important tasks in machine learning:",
+        "explanation": "Identifying transactions that are potentially fraudulent.\nLearning patterns that indicate that a network intrusion has occurred.\nFinding abnormal clusters of patients.\nChecking values entered into a system.\nReference:\nhttps://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/anomaly-detection"
+    },
+    {
+        "id": 6,
+        "topic": 1,
+        "questionNumber": 6,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reliability and safety:",
+        "explanation": "AI systems need to be reliable and safe in order to be trusted. It is important for a system to perform as it was originally\ndesigned and for it to respond safely to new situations. Its inherent resilience should resist intended or unintended\nmanipulation. Rigorous testing and validation should be established for operating conditions to ensure that the system\nresponds safely to edge cases, and A/B testing and champion/challenger methods should be integrated into the evaluation\nprocess.\nAn AI system's performance can degrade over time, so a robust monitoring and model tracking process needs to be established\nto reactively and proactively measure the model's performance and retrain it, as necessary, to modernize it.\nReference:\nhttps://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai"
+    },
+    {
+        "id": 7,
+        "topic": 1,
+        "questionNumber": 7,
+        "type": "unknown",
+        "question": "DRAG DROP -\nMatch the types of AI workloads to the appropriate scenarios.\nTo answer, drag the appropriate workload type from the column on the left to its scenario on the right. Each workload type may\nbe used once, more than once, or not at all.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Box 3: Natural language processing",
+        "explanation": "Natural language processing (NLP) is used for tasks such as sentiment analysis, topic detection, language detection, key phrase\nextraction, and document categorization.\nReference:\nhttps://docs.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing"
+    },
+    {
+        "id": 8,
+        "topic": 1,
+        "questionNumber": 8,
+        "type": "multiple-choice",
+        "question": "You are designing an AI system that empowers everyone, including people who have hearing, visual, and other impairments.\nThis is an example of which Microsoft guiding principle for responsible AI?",
+        "options": [
+            "A. fairness",
+            "B. inclusiveness",
+            "C. reliability and safety",
+            "D. accountability"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 9,
+        "topic": 1,
+        "questionNumber": 9,
+        "type": "unknown",
+        "question": "Match the Microsoft guiding principles for responsible AI to the appropriate descriptions.\nTo answer, drag the appropriate principle from the column on the left to its description on the right. Each principle may be used\nonce, more than once, or not at all.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Box 1: Reliability and safety -",
+        "explanation": "To build trust, it's critical that AI systems operate reliably, safely, and consistently under normal circumstances and in\nunexpected conditions. These systems should be able to operate as they were originally designed, respond safely to\nunanticipated conditions, and resist harmful manipulation.\nBox 2: Accountability -\nThe people who design and deploy AI systems must be accountable for how their systems operate. Organizations should draw\nupon industry standards to develop accountability norms. These norms can ensure that AI systems are not the final authority on\nany decision that impacts people's lives and that humans maintain meaningful control over otherwise highly autonomous AI\nsystems.\nBox 3: Privacy and security -\nAs AI becomes more prevalent, protecting privacy and securing important personal and business information is becoming more\ncritical and complex. With AI, privacy and data security issues require especially close attention because access to data is\nessential for AI systems to make accurate and informed predictions and decisions about people. AI systems must comply with\nprivacy laws that require transparency about the collection, use, and storage of data and mandate that consumers have\nappropriate controls to choose how their data is used\nReference:\nhttps://docs.microsoft.com/en-us/learn/modules/responsible-ai-principles/4-guiding-principles"
+    },
+    {
+        "id": 10,
+        "topic": 1,
+        "questionNumber": 10,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reliability and safety: To build trust, it's critical that AI systems operate reliably, safely, and consistently under normal",
+        "explanation": "circumstances and in unexpected conditions.\nThese systems should be able to operate as they were originally designed, respond safely to unanticipated conditions, and resist\nharmful manipulation.\nReference:\nhttps://docs.microsoft.com/en-us/learn/modules/responsible-ai-principles/4-guiding-principles"
+    },
+    {
+        "id": 11,
+        "topic": 1,
+        "questionNumber": 11,
+        "type": "multiple-choice",
+        "question": "You are building an AI system.\nWhich task should you include to ensure that the service meets the Microsoft transparency principle for responsible AI?",
+        "options": [
+            "A. Ensure that all visuals have an associated text that can be read by a screen reader.",
+            "B. Enable autoscaling to ensure that a service scales based on demand.",
+            "C. Provide documentation to help developers debug code.",
+            "D. Ensure that a training dataset is representative of the population."
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 12,
+        "topic": 1,
+        "questionNumber": 12,
+        "type": "unknown",
+        "question": "DRAG DROP -\nMatch the types of AI workloads to the appropriate scenarios.\nTo answer, drag the appropriate workload type from the column on the left to its scenario on the right. Each workload type may\nbe used once, more than once, or not at all.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/learn/paths/get-started-with-artificial-intelligence-on-azure/"
+    },
+    {
+        "id": 13,
+        "topic": 1,
+        "questionNumber": 13,
+        "type": "unknown",
+        "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 14,
+        "topic": 1,
+        "questionNumber": 14,
+        "type": "multiple-choice",
+        "question": "What are three Microsoft guiding principles for responsible AI? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. knowledgeability",
+            "B. decisiveness",
+            "C. inclusiveness",
+            "D. fairness",
+            "E. opinionatedness",
+            "F. reliability and safety"
+        ],
+        "correctAnswer": "CDF",
+        "explanation": ""
+    },
+    {
+        "id": 15,
+        "topic": 1,
+        "questionNumber": 15,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/concept-object-detection"
+    },
+    {
+        "id": 16,
+        "topic": 1,
+        "questionNumber": 16,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/azure/machine-learning/team-data-science-process/create-features"
+    },
+    {
+        "id": 17,
+        "topic": 1,
+        "questionNumber": 17,
+        "type": "multiple-choice",
+        "question": "You run a charity event that involves posting photos of people wearing sunglasses on Twitter.\nYou need to ensure that you only retweet photos that meet the following requirements:\n✑ Include one or more faces.\n✑ Contain at least one person wearing sunglasses.\nWhat should you use to analyze the images?",
+        "options": [
+            "A. the Verify operation in the Face service",
+            "B. the Detect operation in the Face service",
+            "C. the Describe Image operation in the Computer Vision service",
+            "D. the Analyze Image operation in the Computer Vision service"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 18,
+        "topic": 1,
+        "questionNumber": 18,
+        "type": "multiple-choice",
+        "question": "When you design an AI system to assess whether loans should be approved, the factors used to make the decision should be\nexplainable.\nThis is an example of which Microsoft guiding principle for responsible AI?",
+        "options": [
+            "A. transparency",
+            "B. inclusiveness",
+            "C. fairness",
+            "D. privacy and security"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 19,
+        "topic": 1,
+        "questionNumber": 19,
+        "type": "unknown",
+        "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Box 1: Yes -",
+        "explanation": "Achieving transparency helps the team to understand the data and algorithms used to train the model, what transformation\nlogic was applied to the data, the final model generated, and its associated assets. This information offers insights about how\nthe model was created, which allows it to be reproduced in a transparent way.\nBox 2: No -\nA data holder is obligated to protect the data in an AI system, and privacy and security are an integral part of this system.\nPersonal needs to be secured, and it should be accessed in a way that doesn't compromise an individual's privacy.\nBox 3: No -\nInclusiveness mandates that AI should consider all human races and experiences, and inclusive design practices can help\ndevelopers to understand and address potential barriers that could unintentionally exclude people. Where possible, speech-to-\ntext, text-to-speech, and visual recognition technology should be used to empower people with hearing, visual, and other\nimpairments.\nReference:\nhttps://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai"
+    },
+    {
+        "id": 20,
+        "topic": 1,
+        "questionNumber": 20,
+        "type": "unknown",
+        "question": "DRAG DROP -\nMatch the principles of responsible AI to appropriate requirements.\nTo answer, drag the appropriate principles from the column on the left to its requirement on the right. Each principle may be used\nonce, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai\nhttps://docs.microsoft.com/en-us/learn/modules/responsible-ai-principles/4-guiding-principles"
+    },
+    {
+        "id": 21,
+        "topic": 1,
+        "questionNumber": 21,
+        "type": "unknown",
+        "question": "DRAG DROP -\nYou plan to deploy an Azure Machine Learning model as a service that will be used by client applications.\nWhich three processes should you perform in sequence before you deploy the model? To answer, move the appropriate processes\nfrom the list of processes to the answer area and arrange them in the correct order.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/azure/machine-learning/concept-ml-pipelines"
+    },
+    {
+        "id": 22,
+        "topic": 1,
+        "questionNumber": 22,
+        "type": "multiple-choice",
+        "question": "You are building an AI-based app.\nYou need to ensure that the app uses the principles for responsible AI.\nWhich two principles should you follow? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. Implement an Agile software development methodology",
+            "B. Implement a process of AI model validation as part of the software review process",
+            "C. Establish a risk governance committee that includes members of the legal team, members of the risk management team,\nand a privacy officer",
+            "D. Prevent the disclosure of the use of AI-based algorithms for automated decision making"
+        ],
+        "correctAnswer": "BC",
+        "explanation": ""
+    },
+    {
+        "id": 23,
+        "topic": 1,
+        "questionNumber": 23,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai"
+    },
+    {
+        "id": 24,
+        "topic": 1,
+        "questionNumber": 24,
+        "type": "unknown",
+        "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Fairness is a core ethical principle that all humans aim to understand and apply. This principle is even more important when AI",
+        "explanation": "systems are being developed. Key checks and balances need to make sure that the system's decisions don't discriminate or run\na gender, race, sexual orientation, or religion bias toward a group or individual.\nReference:\nhttps://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai"
+    },
+    {
+        "id": 25,
+        "topic": 1,
+        "questionNumber": 25,
+        "type": "unknown",
+        "question": "DRAG DROP -\nMatch the types of AI workloads to the appropriate scenarios.\nTo answer, drag the appropriate workload type from the column on the left to its scenario on the right. Each workload type may\nbe used once, more than once, or not at all.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Box 1: Knowledge mining -",
+        "explanation": "You can use Azure Cognitive Search's knowledge mining results and populate your knowledge base of your chatbot.\nBox 2: Computer vision -\nBox 3: Natural language processing\nNatural language processing (NLP) is used for tasks such as sentiment analysis.\nReference:\nhttps://docs.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing"
+    },
+    {
+        "id": 26,
+        "topic": 1,
+        "questionNumber": 26,
+        "type": "unknown",
+        "question": "DRAG DROP -\nMatch the machine learning tasks to the appropriate scenarios.\nTo answer, drag the appropriate task from the column on the left to its scenario on the right. Each task may be used once, more\nthan once, or not at all.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Box 1: Model evaluation -",
+        "explanation": "The Model evaluation module outputs a confusion matrix showing the number of true positives, false negatives, false positives,\nand true negatives, as well as\nROC, Precision/Recall, and Lift curves.\nBox 2: Feature engineering -\nFeature engineering is the process of using domain knowledge of the data to create features that help ML algorithms learn\nbetter. In Azure Machine Learning, scaling and normalization techniques are applied to facilitate feature engineering.\nCollectively, these techniques and feature engineering are referred to as featurization.\nNote: Often, features are created from raw data through a process of feature engineering. For example, a time stamp in itself\nmight not be useful for modeling until the information is transformed into units of days, months, or categories that are relevant\nto the problem, such as holiday versus working day.\nBox 3: Feature selection -\nIn machine learning and statistics, feature selection is the process of selecting a subset of relevant, useful features to use in\nbuilding an analytical model. Feature selection helps narrow the field of data to the most valuable inputs. Narrowing the field of\ndata helps reduce noise and improve training performance.\nReference:\n\n\n\n\n\nhttps://docs.microsoft.com/en-us/azure/machine-learning/studio/evaluate-model-performance https://docs.microsoft.com/en-\nus/azure/machine-learning/concept-automated-ml"
+    },
+    {
+        "id": 27,
+        "topic": 1,
+        "questionNumber": 27,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://www.baeldung.com/cs/feature-vs-label\nhttps://machinelearningmastery.com/discover-feature-engineering-how-to-engineer-features-and-how-to-get-good-at-it/"
+    },
+    {
+        "id": 28,
+        "topic": 1,
+        "questionNumber": 28,
+        "type": "multiple-choice",
+        "question": "You have the Predicted vs. True chart shown in the following exhibit.\nWhich type of model is the chart used to evaluate?",
+        "options": [
+            "A. classification",
+            "B. regression",
+            "C. clustering"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 29,
+        "topic": 1,
+        "questionNumber": 29,
+        "type": "multiple-choice",
+        "question": "Which type of machine learning should you use to predict the number of gift cards that will be sold next month?",
+        "options": [
+            "A. classification",
+            "B. regression",
+            "C. clustering"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 30,
+        "topic": 1,
+        "questionNumber": 30,
+        "type": "multiple-choice",
+        "question": "You have a dataset that contains information about taxi journeys that occurred during a given period.\nYou need to train a model to predict the fare of a taxi journey.\nWhat should you use as a feature?",
+        "options": [
+            "A. the number of taxi journeys in the dataset",
+            "B. the trip distance of individual taxi journeys",
+            "C. the fare of individual taxi journeys",
+            "D. the trip ID of individual taxi journeys"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 31,
+        "topic": 1,
+        "questionNumber": 31,
+        "type": "multiple-choice",
+        "question": "You need to predict the sea level in meters for the next 10 years.\nWhich type of machine learning should you use?",
+        "options": [
+            "A. classification",
+            "B. regression",
+            "C. clustering"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 32,
+        "topic": 1,
+        "questionNumber": 32,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Box 1: Yes -",
+        "explanation": "Automated machine learning, also referred to as automated ML or AutoML, is the process of automating the time consuming,\niterative tasks of machine learning model development. It allows data scientists, analysts, and developers to build ML models\nwith high scale, efficiency, and productivity all while sustaining model quality.\nBox 2: No -\nBox 3: Yes -\nDuring training, Azure Machine Learning creates a number of pipelines in parallel that try different algorithms and parameters\nfor you. The service iterates through\nML algorithms paired with feature selections, where each iteration produces a model with a training score. The higher the score,\nthe better the model is considered to \"fit\" your data. It will stop once it hits the exit criteria defined in the experiment.\nBox 4: No -\nApply automated ML when you want Azure Machine Learning to train and tune a model for you using the target metric you\nspecify.\nThe label is the column you want to predict.\n\n\n\n\n\nReference:\nhttps://azure.microsoft.com/en-us/services/machine-learning/automatedml/#features"
+    },
+    {
+        "id": 33,
+        "topic": 1,
+        "questionNumber": 33,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Two-class classification provides the answer to simple two-choice questions such as Yes/No or True/False.",
+        "explanation": ""
+    },
+    {
+        "id": 34,
+        "topic": 1,
+        "questionNumber": 34,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Box 1: Yes -",
+        "explanation": "In machine learning, if you have labeled data, that means your data is marked up, or annotated, to show the target, which is the\nanswer you want your machine learning model to predict.\nIn general, data labeling can refer to tasks that include data tagging, annotation, classification, moderation, transcription, or\nprocessing.\nBox 2: No -\nBox 3: No -\nAccuracy is simply the proportion of correctly classified instances. It is usually the first metric you look at when evaluating a\nclassifier. However, when the test data is unbalanced (where most of the instances belong to one of the classes), or you are\nmore interested in the performance on either one of the classes, accuracy doesn't really capture the effectiveness of a classifier.\nReference:\nhttps://www.cloudfactory.com/data-labeling-guide\nhttps://docs.microsoft.com/en-us/azure/machine-learning/studio/evaluate-model-performance"
+    },
+    {
+        "id": 35,
+        "topic": 1,
+        "questionNumber": 35,
+        "type": "multiple-choice",
+        "question": "Which service should you use to extract text, key/value pairs, and table data automatically from scanned documents?",
+        "options": [
+            "A. Form Recognizer",
+            "B. Text Analytics",
+            "C. Language Understanding",
+            "D. Custom Vision"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 36,
+        "topic": 1,
+        "questionNumber": 36,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Accelerate your business processes by automating information extraction. Form Recognizer applies advanced machine learning",
+        "explanation": "to accurately extract text, key/ value pairs, and tables from documents. With just a few samples, Form Recognizer tailors its\nunderstanding to your documents, both on-premises and in the cloud. Turn forms into usable data at a fraction of the time and\ncost, so you can focus more time acting on the information rather than compiling it.\nReference:\nhttps://azure.microsoft.com/en-us/services/cognitive-services/form-recognizer/"
+    },
+    {
+        "id": 37,
+        "topic": 1,
+        "questionNumber": 37,
+        "type": "multiple-choice",
+        "question": "You use Azure Machine Learning designer to publish an inference pipeline.\nWhich two parameters should you use to access the web service? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. the model name",
+            "B. the training endpoint",
+            "C. the authentication key",
+            "D. the REST endpoint"
+        ],
+        "correctAnswer": "CD",
+        "explanation": ""
+    },
+    {
+        "id": 38,
+        "topic": 1,
+        "questionNumber": 38,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "To perform real-time inferencing, you must deploy a pipeline as a real-time endpoint.",
+        "explanation": "Real-time endpoints must be deployed to an Azure Kubernetes Service cluster.\nReference:\nhttps://docs.microsoft.com/en-us/azure/machine-learning/concept-designer#deploy"
+    },
+    {
+        "id": 39,
+        "topic": 1,
+        "questionNumber": 39,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "In the most basic sense, regression refers to prediction of a numeric target.",
+        "explanation": "Linear regression attempts to establish a linear relationship between one or more independent variables and a numeric\noutcome, or dependent variable.\nYou use this module to define a linear regression method, and then train a model using a labeled dataset. The trained model\ncan then be used to make predictions.\nIncorrect Answers:\n✑ Classification is a machine learning method that uses data to determine the category, type, or class of an item or row of data.\n✑ Clustering, in machine learning, is a method of grouping data points into similar clusters. It is also called segmentation.\nOver the years, many clustering algorithms have been developed. Almost all clustering algorithms use the features of individual\nitems to find similar items. For example, you might apply clustering to find similar people by demographics. You might use\nclustering with text analysis to group sentences with similar topics or sentiment.\nReference:\nhttps://docs.microsoft.com/en-us/azure/machine-learning/algorithm-module-reference/linear-regression\nhttps://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/machine-learning-initialize-model-\nclustering"
+    },
+    {
+        "id": 40,
+        "topic": 1,
+        "questionNumber": 40,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Box 1: Yes -",
+        "explanation": "Azure Machine Learning designer lets you visually connect datasets and modules on an interactive canvas to create machine\nlearning models.\nBox 2: Yes -\nWith the designer you can connect the modules to create a pipeline draft.\nAs you edit a pipeline in the designer, your progress is saved as a pipeline draft.\nBox 3: No -\nReference:\nhttps://docs.microsoft.com/en-us/azure/machine-learning/concept-designer"
+    },
+    {
+        "id": 41,
+        "topic": 1,
+        "questionNumber": 41,
+        "type": "unknown",
+        "question": "HOTSPOT -\nYou have the following dataset.\nYou plan to use the dataset to train a model that will predict the house price categories of houses.\nWhat are Household Income and House Price Category? To answer, select the appropriate option in the answer area.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/azure/machine-learning/studio/interpret-model-results"
+    },
+    {
+        "id": 42,
+        "topic": 1,
+        "questionNumber": 42,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/azure/machine-learning/concept-designer"
+    },
+    {
+        "id": 43,
+        "topic": 1,
+        "questionNumber": 43,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 44,
+        "topic": 1,
+        "questionNumber": 44,
+        "type": "multiple-choice",
+        "question": "A medical research project uses a large anonymized dataset of brain scan images that are categorized into predefined brain\nhaemorrhage types.\nYou need to use machine learning to support early detection of the different brain haemorrhage types in the images before the\nimages are reviewed by a person.\nThis is an example of which type of machine learning?",
+        "options": [
+            "A. clustering",
+            "B. regression",
+            "C. classification"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 45,
+        "topic": 1,
+        "questionNumber": 45,
+        "type": "multiple-choice",
+        "question": "When training a model, why should you randomly split the rows into separate subsets?",
+        "options": [
+            "A. to train the model twice to attain better accuracy",
+            "B. to train multiple models simultaneously to attain better performance",
+            "C. to test the model by using data that was not used to train the model"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 46,
+        "topic": 1,
+        "questionNumber": 46,
+        "type": "multiple-choice",
+        "question": "You are evaluating whether to use a basic workspace or an enterprise workspace in Azure Machine Learning.\nWhat are two tasks that require an enterprise workspace? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. Use a graphical user interface (GUI) to run automated machine learning experiments.",
+            "B. Create a compute instance to use as a workstation.",
+            "C. Use a graphical user interface (GUI) to define and run machine learning experiments from Azure Machine Learning designer.\nMost Voted",
+            "D. Create a dataset from a comma-separated value (CSV) file."
+        ],
+        "correctAnswer": "AC",
+        "explanation": ""
+    },
+    {
+        "id": 47,
+        "topic": 1,
+        "questionNumber": 47,
+        "type": "multiple-choice",
+        "question": "You need to predict the income range of a given customer by using the following dataset.\nWhich two fields should you use as features? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. Education Level",
+            "B. Last Name",
+            "C. Age",
+            "D. Income Range",
+            "E. First Name"
+        ],
+        "correctAnswer": "AC",
+        "explanation": ""
+    },
+    {
+        "id": 48,
+        "topic": 1,
+        "questionNumber": 48,
+        "type": "multiple-choice",
+        "question": "You are building a tool that will process images from retail stores and identify the products of competitors.\nThe solution will use a custom model.\nWhich Azure Cognitive Services service should you use?",
+        "options": [
+            "A. Custom Vision",
+            "B. Form Recognizer",
+            "C. Face",
+            "D. Computer Vision"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 49,
+        "topic": 1,
+        "questionNumber": 49,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Clustering is a machine learning task that is used to group instances of data into clusters that contain similar characteristics.",
+        "explanation": "Clustering can also be used to identify relationships in a dataset\nRegression is a machine learning task that is used to predict the value of the label from a set of related features.\nReference:\nhttps://docs.microsoft.com/en-us/dotnet/machine-learning/resources/tasks"
+    },
+    {
+        "id": 50,
+        "topic": 1,
+        "questionNumber": 50,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Box 1: No -",
+        "explanation": "The validation dataset is different from the test dataset that is held back from the training of the model.\nBox 2: Yes -\nA validation dataset is a sample of data that is used to give an estimate of model skill while tuning model's hyperparameters.\nBox 3: No -\nThe Test Dataset, not the validation set, used for this. The Test Dataset is a sample of data used to provide an unbiased\nevaluation of a final model fit on the training dataset.\nReference:\nhttps://machinelearningmastery.com/difference-test-validation-datasets/"
+    },
+    {
+        "id": 51,
+        "topic": 1,
+        "questionNumber": 51,
+        "type": "multiple-choice",
+        "question": "What are two metrics that you can use to evaluate a regression model? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. coefficient of determination (R2)",
+            "B. F1 score",
+            "C. root mean squared error (RMSE)",
+            "D. area under curve (AUC)",
+            "E. balanced accuracy"
+        ],
+        "correctAnswer": "AC",
+        "explanation": ""
+    },
+    {
+        "id": 52,
+        "topic": 1,
+        "questionNumber": 52,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Regression is a machine learning task that is used to predict the value of the label from a set of related features.",
+        "explanation": "Reference:\nhttps://docs.microsoft.com/en-us/dotnet/machine-learning/resources/tasks"
+    },
+    {
+        "id": 53,
+        "topic": 1,
+        "questionNumber": 53,
+        "type": "unknown",
+        "question": "DRAG DROP -\nYou need to use Azure Machine Learning designer to build a model that will predict automobile prices.\nWhich type of modules should you use to complete the model? To answer, drag the appropriate modules to the correct locations.\nEach module may be used once, more than once, or not at all. You may need to drag the split bar between panes or scroll to view\ncontent.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Box 1: Select Columns in Dataset",
+        "explanation": "For Columns to be cleaned, choose the columns that contain the missing values you want to change. You can choose multiple\ncolumns, but you must use the same replacement method in all selected columns.\nExample:\nBox 2: Split data -\nSplitting data is a common task in machine learning. You will split your data into two separate datasets. One dataset will train\nthe model and the other will test how well the model performed.\n\n\n\n\n\nBox 3: Linear regression -\nBecause you want to predict price, which is a number, you can use a regression algorithm. For this example, you use a linear\nregression model.\nReference:\nhttps://docs.microsoft.com/en-us/azure/machine-learning/tutorial-designer-automobile-price-train-score"
+    },
+    {
+        "id": 54,
+        "topic": 1,
+        "questionNumber": 54,
+        "type": "multiple-choice",
+        "question": "Which type of machine learning should you use to identify groups of people who have similar purchasing habits?",
+        "options": [
+            "A. classification",
+            "B. regression",
+            "C. clustering"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 55,
+        "topic": 1,
+        "questionNumber": 55,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Regression is a machine learning task that is used to predict the value of the label from a set of related features.",
+        "explanation": "Reference:\nhttps://docs.microsoft.com/en-us/dotnet/machine-learning/resources/tasks"
+    },
+    {
+        "id": 56,
+        "topic": 1,
+        "questionNumber": 56,
+        "type": "multiple-choice",
+        "question": "Which metric can you use to evaluate a classification model?",
+        "options": [
+            "A. true positive rate",
+            "B. mean absolute error (MAE)",
+            "C. coefficient of determination (R2)",
+            "D. root mean squared error (RMSE)"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 57,
+        "topic": 1,
+        "questionNumber": 57,
+        "type": "multiple-choice",
+        "question": "Which two components can you drag onto a canvas in Azure Machine Learning designer? Each correct answer presents a\ncomplete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. dataset",
+            "B. compute",
+            "C. pipeline",
+            "D. module"
+        ],
+        "correctAnswer": "AD",
+        "explanation": ""
+    },
+    {
+        "id": 58,
+        "topic": 1,
+        "questionNumber": 58,
+        "type": "multiple-choice",
+        "question": "You need to create a training dataset and validation dataset from an existing dataset.\nWhich module in the Azure Machine Learning designer should you use?",
+        "options": [
+            "A. Select Columns in Dataset",
+            "B. Add Rows",
+            "C. Split Data",
+            "D. Join Data"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 59,
+        "topic": 1,
+        "questionNumber": 59,
+        "type": "unknown",
+        "question": "DRAG DROP -\nMatch the types of machine learning to the appropriate scenarios.\nTo answer, drag the appropriate machine learning type from the column on the left to its scenario on the right. Each machine\nlearning type may be used once, more than once, or not at all.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Box 1: Regression -",
+        "explanation": "In the most basic sense, regression refers to prediction of a numeric target.\nLinear regression attempts to establish a linear relationship between one or more independent variables and a numeric\noutcome, or dependent variable.\nYou use this module to define a linear regression method, and then train a model using a labeled dataset. The trained model\ncan then be used to make predictions.\nBox 2: Clustering -\nClustering, in machine learning, is a method of grouping data points into similar clusters. It is also called segmentation.\nOver the years, many clustering algorithms have been developed. Almost all clustering algorithms use the features of individual\nitems to find similar items. For example, you might apply clustering to find similar people by demographics. You might use\nclustering with text analysis to group sentences with similar topics or sentiment.\nBox 3: Classification -\nTwo-class classification provides the answer to simple two-choice questions such as Yes/No or True/False.\nReference:\nhttps://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/linear-regression"
+    },
+    {
+        "id": 60,
+        "topic": 1,
+        "questionNumber": 60,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 61,
+        "topic": 1,
+        "questionNumber": 61,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/innovate/best-practices/trusted-ai"
+    },
+    {
+        "id": 62,
+        "topic": 1,
+        "questionNumber": 62,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 63,
+        "topic": 1,
+        "questionNumber": 63,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/azure/machine-learning/how-to-label-data"
+    },
+    {
+        "id": 64,
+        "topic": 1,
+        "questionNumber": 64,
+        "type": "unknown",
+        "question": "HOTSPOT -\nYou have an Azure Machine Learning model that predicts product quality. The model has a training dataset that contains 50,000\nrecords. A sample of the data is shown in the following table.\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/azure/machine-learning/component-reference/filter-based-feature-selection"
+    },
+    {
+        "id": 65,
+        "topic": 1,
+        "questionNumber": 65,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/learn/modules/create-regression-model-azure-machine-learning-designer/5-create-training-\npipeline https://docs.microsoft.com/en-us/learn/modules/create-classification-model-azure-machine-learning-\ndesigner/introduction https://docs.microsoft.com/en-us/learn/modules/create-clustering-model-azure-machine-learning-\ndesigner/1-introduction"
+    },
+    {
+        "id": 66,
+        "topic": 1,
+        "questionNumber": 66,
+        "type": "multiple-choice",
+        "question": "Which two actions are performed during the data ingestion and data preparation stage of an Azure Machine Learning process?\nEach correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. Calculate the accuracy of the model.",
+            "B. Score test data by using the model.",
+            "C. Combine multiple datasets.",
+            "D. Use the model for real-time predictions.",
+            "E. Remove records that have missing values."
+        ],
+        "correctAnswer": "CE",
+        "explanation": ""
+    },
+    {
+        "id": 67,
+        "topic": 1,
+        "questionNumber": 67,
+        "type": "multiple-choice",
+        "question": "You need to predict the animal population of an area.\nWhich Azure Machine Learning type should you use?",
+        "options": [
+            "A. regression",
+            "B. clustering",
+            "C. classification"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 68,
+        "topic": 1,
+        "questionNumber": 68,
+        "type": "multiple-choice",
+        "question": "Which two languages can you use to write custom code for Azure Machine Learning designer? Each correct answer presents a\ncomplete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. Python",
+            "B. R",
+            "C. C#",
+            "D. Scala"
+        ],
+        "correctAnswer": "AB",
+        "explanation": ""
+    },
+    {
+        "id": 69,
+        "topic": 1,
+        "questionNumber": 69,
+        "type": "unknown",
+        "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Box 1: Yes -",
+        "explanation": "For regression problems, the label column must contain numeric data that represents the response variable. Ideally the numeric\ndata represents a continuous scale.\nBox 2: No -\nK-Means Clustering -\nBecause the K-means algorithm is an unsupervised learning method, a label column is optional.\nIf your data includes a label, you can use the label values to guide selection of the clusters and optimize the model.\nIf your data has no label, the algorithm creates clusters representing possible categories, based solely on the data.\nBox 3: No -\nFor classification problems, the label column must contain either categorical values or discrete values. Some examples might be\na yes/no rating, a disease classification code or name, or an income group. If you pick a noncategorical column, the component\nwill return an error during training.\nReference:\nhttps://docs.microsoft.com/en-us/azure/machine-learning/component-reference/train-model https://docs.microsoft.com/en-\nus/azure/machine-learning/component-reference/k-means-clustering"
+    },
+    {
+        "id": 70,
+        "topic": 1,
+        "questionNumber": 70,
+        "type": "multiple-choice",
+        "question": "Your company wants to build a recycling machine for bottles. The recycling machine must automatically identify bottles of the\ncorrect shape and reject all other items.\nWhich type of AI workload should the company use?",
+        "options": [
+            "A. anomaly detection",
+            "B. conversational AI",
+            "C. computer vision",
+            "D. natural language processing"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 71,
+        "topic": 1,
+        "questionNumber": 71,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/get-started-build-detector"
+    },
+    {
+        "id": 72,
+        "topic": 1,
+        "questionNumber": 72,
+        "type": "multiple-choice",
+        "question": "In which two scenarios can you use the Form Recognizer service? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. Extract the invoice number from an invoice.",
+            "B. Translate a form from French to English.",
+            "C. Find image of product in a catalog.",
+            "D. Identify the retailer from a receipt."
+        ],
+        "correctAnswer": "AD",
+        "explanation": ""
+    },
+    {
+        "id": 73,
+        "topic": 1,
+        "questionNumber": 73,
+        "type": "unknown",
+        "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/overview https://docs.microsoft.com/en-\nus/azure/cognitive-services/computer-vision/intro-to-spatial-analysis-public-preview"
+    },
+    {
+        "id": 74,
+        "topic": 1,
+        "questionNumber": 74,
+        "type": "unknown",
+        "question": "HOTSPOT -\nYou have a database that contains a list of employees and their photos.\nYou are tagging new photos of the employees.\nFor each of the following statements select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/azure/cognitive-services/face/overview https://docs.microsoft.com/en-us/azure/cognitive-\nservices/face/concepts/face-detection"
+    },
+    {
+        "id": 75,
+        "topic": 1,
+        "questionNumber": 75,
+        "type": "multiple-choice",
+        "question": "You need to develop a mobile app for employees to scan and store their expenses while travelling.\nWhich type of computer vision should you use?",
+        "options": [
+            "A. semantic segmentation",
+            "B. image classification",
+            "C. object detection",
+            "D. optical character recognition (OCR)"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 76,
+        "topic": 1,
+        "questionNumber": 76,
+        "type": "unknown",
+        "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Box 1: Yes -",
+        "explanation": "Custom Vision functionality can be divided into two features. Image classification applies one or more labels to an image.\nObject detection is similar, but it also returns the coordinates in the image where the applied label(s) can be found.\nBox 2: Yes -\nThe Custom Vision service uses a machine learning algorithm to analyze images. You, the developer, submit groups of images\nthat feature and lack the characteristics in question. You label the images yourself at the time of submission. Then, the algorithm\ntrains to this data and calculates its own accuracy by testing itself on those same images.\nBox 3: No -\nCustom Vision service can be used only on graphic files.\nReference:\nhttps://docs.microsoft.com/en-us/azure/cognitive-services/Custom-Vision-Service/overview"
+    },
+    {
+        "id": 77,
+        "topic": 1,
+        "questionNumber": 77,
+        "type": "multiple-choice",
+        "question": "You are processing photos of runners in a race.\nYou need to read the numbers on the runners' shirts to identity the runners in the photos.\nWhich type of computer vision should you use?",
+        "options": [
+            "A. facial recognition",
+            "B. optical character recognition (OCR)",
+            "C. image classification",
+            "D. object detection"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 78,
+        "topic": 1,
+        "questionNumber": 78,
+        "type": "unknown",
+        "question": "Match the types of machine learning to the appropriate scenarios.\nTo answer, drag the appropriate machine learning type from the column on the left to its scenario on the right. Each machine\nlearning type may be used once, more than once, or not at all.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Box 1: Image classification -",
+        "explanation": "Image classification is a supervised learning problem: define a set of target classes (objects to identify in images), and train a\nmodel to recognize them using labeled example photos.\nBox 2: Object detection -\nObject detection is a computer vision problem. While closely related to image classification, object detection performs image\nclassification at a more granular scale. Object detection both locates and categorizes entities within images.\nBox 3: Semantic Segmentation -\nSemantic segmentation achieves fine-grained inference by making dense predictions inferring labels for every pixel, so that\neach pixel is labeled with the class of its enclosing object ore region.\nReference:\nhttps://developers.google.com/machine-learning/practica/image-classification https://docs.microsoft.com/en-\nus/dotnet/machine-learning/tutorials/object-detection-model-builder https://nanonets.com/blog/how-to-do-semantic-\nsegmentation-using-deep-learning/"
+    },
+    {
+        "id": 79,
+        "topic": 1,
+        "questionNumber": 79,
+        "type": "multiple-choice",
+        "question": "You use drones to identify where weeds grow between rows of crops to send an instruction for the removal of the weeds.\nThis is an example of which type of computer vision?",
+        "options": [
+            "A. object detection",
+            "B. optical character recognition (OCR)",
+            "C. scene segmentation"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 80,
+        "topic": 1,
+        "questionNumber": 80,
+        "type": "unknown",
+        "question": "DRAG DROP -\nMatch the facial recognition tasks to the appropriate questions.\nTo answer, drag the appropriate task from the column on the left to its question on the right. Each task may be used once, more\nthan once, or not at all.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Box 1: verification -",
+        "explanation": "Face verification: Check the likelihood that two faces belong to the same person and receive a confidence score.\nBox 2: similarity -\nBox 3: Grouping -\nBox 4: identification -\nFace detection: Detect one or more human faces along with attributes such as: age, emotion, pose, smile, and facial hair,\nincluding 27 landmarks for each face in the image.\nReference:\nhttps://azure.microsoft.com/en-us/services/cognitive-services/face/#features"
+    },
+    {
+        "id": 81,
+        "topic": 1,
+        "questionNumber": 81,
+        "type": "unknown",
+        "question": "Match the types of computer vision workloads to the appropriate scenarios.\nTo answer, drag the appropriate workload type from the column on the left to its scenario on the right. Each workload type may\nbe used once, more than once, or not at all.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Box 1: Facial recognition -",
+        "explanation": "Face detection that perceives faces and attributes in an image; person identification that matches an individual in your private\nrepository of up to 1 million people; perceived emotion recognition that detects a range of facial expressions like happiness,\ncontempt, neutrality, and fear; and recognition and grouping of similar faces in images.\nBox 2: OCR -\nBox 3: Objection detection -\nObject detection is similar to tagging, but the API returns the bounding box coordinates (in pixels) for each object found. For\nexample, if an image contains a dog, cat and person, the Detect operation will list those objects together with their coordinates\nin the image. You can use this functionality to process the relationships between the objects in an image. It also lets you\ndetermine whether there are multiple instances of the same tag in an image.\nThe Detect API applies tags based on the objects or living things identified in the image. There is currently no formal\nrelationship between the tagging taxonomy and the object detection taxonomy. At a conceptual level, the Detect API only finds\nobjects and living things, while the Tag API can also include contextual terms like \"indoor\", which can't be localized with\nbounding boxes.\nReference:\nhttps://azure.microsoft.com/en-us/services/cognitive-services/face/ https://docs.microsoft.com/en-us/azure/cognitive-\nservices/computer-vision/concept-object-detection"
+    },
+    {
+        "id": 82,
+        "topic": 1,
+        "questionNumber": 82,
+        "type": "multiple-choice",
+        "question": "You need to determine the location of cars in an image so that you can estimate the distance between the cars.\nWhich type of computer vision should you use?",
+        "options": [
+            "A. optical character recognition (OCR)",
+            "B. object detection",
+            "C. image classification",
+            "D. face detection"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 83,
+        "topic": 1,
+        "questionNumber": 83,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Azure Custom Vision is a cognitive service that lets you build, deploy, and improve your own image classifiers. An image",
+        "explanation": "classifier is an AI service that applies labels (which represent classes) to images, according to their visual characteristics. Unlike\nthe Computer Vision service, Custom Vision allows you to specify the labels to apply.\nNote: The Custom Vision service uses a machine learning algorithm to apply labels to images. You, the developer, must submit\ngroups of images that feature and lack the characteristics in question. You label the images yourself at the time of submission.\nThen the algorithm trains to this data and calculates its own accuracy by testing itself on those same images. Once the\nalgorithm is trained, you can test, retrain, and eventually use it to classify new images according to the needs of your app. You\ncan also export the model itself for offline use.\nIncorrect Answers:\nComputer Vision:\nAzure's Computer Vision service provides developers with access to advanced algorithms that process images and return\ninformation based on the visual features you're interested in. For example, Computer Vision can determine whether an image\ncontains adult content, find specific brands or objects, or find human faces.\nReference:\nhttps://docs.microsoft.com/en-us/azure/cognitive-services/custom-vision-service/home"
+    },
+    {
+        "id": 84,
+        "topic": 1,
+        "questionNumber": 84,
+        "type": "multiple-choice",
+        "question": "You send an image to a Computer Vision API and receive back the annotated image shown in the exhibit.\nWhich type of computer vision was used?",
+        "options": [
+            "A. object detection",
+            "B. face detection",
+            "C. optical character recognition (OCR)",
+            "D. image classification"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 85,
+        "topic": 1,
+        "questionNumber": 85,
+        "type": "multiple-choice",
+        "question": "What are two tasks that can be performed by using the Computer Vision service? Each correct answer presents a complete\nsolution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. Train a custom image classification model.",
+            "B. Detect faces in an image.",
+            "C. Recognize handwritten text.",
+            "D. Translate the text in an image between languages."
+        ],
+        "correctAnswer": "BC",
+        "explanation": ""
+    },
+    {
+        "id": 86,
+        "topic": 1,
+        "questionNumber": 86,
+        "type": "multiple-choice",
+        "question": "What is a use case for classification?",
+        "options": [
+            "A. predicting how many cups of coffee a person will drink based on how many hours the person slept the previous night.",
+            "B. analyzing the contents of images and grouping images that have similar colors",
+            "C. predicting whether someone uses a bicycle to travel to work based on the distance from home to work",
+            "D. predicting how many minutes it will take someone to run a race based on past race times"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 87,
+        "topic": 1,
+        "questionNumber": 87,
+        "type": "multiple-choice",
+        "question": "What are two tasks that can be performed by using computer vision? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. Predict stock prices.",
+            "B. Detect brands in an image.",
+            "C. Detect the color scheme in an image",
+            "D. Translate text between languages.",
+            "E. Extract key phrases."
+        ],
+        "correctAnswer": "BC",
+        "explanation": ""
+    },
+    {
+        "id": 88,
+        "topic": 1,
+        "questionNumber": 88,
+        "type": "multiple-choice",
+        "question": "You need to build an image tagging solution for social media that tags images of your friends automatically.\nWhich Azure Cognitive Services service should you use?",
+        "options": [
+            "A. Face",
+            "B. Form Recognizer",
+            "C. Text Analytics",
+            "D. Computer Vision"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 89,
+        "topic": 1,
+        "questionNumber": 89,
+        "type": "multiple-choice",
+        "question": "In which two scenarios can you use the Form Recognizer service? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. Identify the retailer from a receipt",
+            "B. Translate from French to English",
+            "C. Extract the invoice number from an invoice",
+            "D. Find images of products in a catalog"
+        ],
+        "correctAnswer": "AC",
+        "explanation": ""
+    },
+    {
+        "id": 90,
+        "topic": 1,
+        "questionNumber": 90,
+        "type": "unknown",
+        "question": "DRAG DROP -\nMatch the facial recognition tasks to the appropriate questions.\nTo answer, drag the appropriate task from the column on the left to its question on the right. Each task may be used once, more\nthan once, or not at all.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Box 1: verification -",
+        "explanation": "Identity verification -\nModern enterprises and apps can use the Face identification and Face verification operations to verify that a user is who they\nclaim to be.\nBox 2: similarity -\nThe Find Similar operation does face matching between a target face and a set of candidate faces, finding a smaller set of faces\nthat look similar to the target face.\nThis is useful for doing a face search by image.\nThe service supports two working modes, matchPerson and matchFace. The matchPerson mode returns similar faces after\nfiltering for the same person by using the Verify API. The matchFace mode ignores the same-person filter. It returns a list of\nsimilar candidate faces that may or may not belong to the same person.\nBox 3: identification -\nFace identification can address \"one-to-many\" matching of one face in an image to a set of faces in a secure repository. Match\ncandidates are returned based on how closely their face data matches the query face. This scenario is used in granting building\nor airport access to a certain group of people or verifying the user of a device.\n\n\n\n\n\nReference:\nhttps://docs.microsoft.com/en-us/azure/cognitive-services/face/overview"
+    },
+    {
+        "id": 91,
+        "topic": 1,
+        "questionNumber": 91,
+        "type": "multiple-choice",
+        "question": "Which Computer Vision feature can you use to generate automatic captions for digital photographs?",
+        "options": [
+            "A. Recognize text.",
+            "B. Identify the areas of interest.",
+            "C. Detect objects.",
+            "D. Describe the images."
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 92,
+        "topic": 1,
+        "questionNumber": 92,
+        "type": "multiple-choice",
+        "question": "Which service should you use to extract text, key/value pairs, and table data automatically from scanned documents?",
+        "options": [
+            "A. Custom Vision",
+            "B. Face",
+            "C. Form Recognizer",
+            "D. Language"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 93,
+        "topic": 1,
+        "questionNumber": 93,
+        "type": "unknown",
+        "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Handwriting OCR (optical character recognition) is the process of automatically extracting handwritten information from paper,",
+        "explanation": "scans and other low-quality digital documents.\nReference:\nhttps://vidado.ai/handwriting-ocr"
+    },
+    {
+        "id": 94,
+        "topic": 1,
+        "questionNumber": 94,
+        "type": "multiple-choice",
+        "question": "You are developing a solution that uses the Text Analytics service.\nYou need to identify the main talking points in a collection of documents.\nWhich type of natural language processing should you use?",
+        "options": [
+            "A. entity recognition",
+            "B. key phrase extraction",
+            "C. sentiment analysis",
+            "D. language detection"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 95,
+        "topic": 1,
+        "questionNumber": 95,
+        "type": "multiple-choice",
+        "question": "In which two scenarios can you use speech recognition? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. an in-car system that reads text messages aloud",
+            "B. providing closed captions for recorded or live videos",
+            "C. creating an automated public address system for a train station",
+            "D. creating a transcript of a telephone call or meeting"
+        ],
+        "correctAnswer": "BD",
+        "explanation": ""
+    },
+    {
+        "id": 96,
+        "topic": 1,
+        "questionNumber": 96,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://azure.microsoft.com/en-gb/services/cognitive-services/speech-to-text/#features"
+    },
+    {
+        "id": 97,
+        "topic": 1,
+        "questionNumber": 97,
+        "type": "multiple-choice",
+        "question": "You need to build an app that will read recipe instructions aloud to support users who have reduced vision.\nWhich version service should you use?",
+        "options": [
+            "A. Text Analytics",
+            "B. Translator",
+            "C. Speech",
+            "D. Language Understanding (LUIS)"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 98,
+        "topic": 1,
+        "questionNumber": 98,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-gb/azure/cognitive-services/text-analytics/overview https://azure.microsoft.com/en-\ngb/services/cognitive-services/speech-services/"
+    },
+    {
+        "id": 99,
+        "topic": 1,
+        "questionNumber": 99,
+        "type": "multiple-choice",
+        "question": "Your website has a chatbot to assist customers.\nYou need to detect when a customer is upset based on what the customer types in the chatbot.\nWhich type of AI workload should you use?",
+        "options": [
+            "A. anomaly detection",
+            "B. computer vision",
+            "C. regression",
+            "D. natural language processing"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 100,
+        "topic": 1,
+        "questionNumber": 100,
+        "type": "multiple-choice",
+        "question": "You plan to develop a bot that will enable users to query a knowledge base by using natural language processing.\nWhich two services should you include in the solution? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. QnA Maker",
+            "B. Azure Bot Service",
+            "C. Form Recognizer",
+            "D. Anomaly Detector"
+        ],
+        "correctAnswer": "AB",
+        "explanation": ""
+    },
+    {
+        "id": 101,
+        "topic": 1,
+        "questionNumber": 101,
+        "type": "multiple-choice",
+        "question": "In which two scenarios can you use a speech synthesis solution? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. an automated voice that reads back a credit card number entered into a telephone by using a numeric keypad",
+            "B. generating live captions for a news broadcast",
+            "C. extracting key phrases from the audio recording of a meeting",
+            "D. an AI character in a computer game that speaks audibly to a player"
+        ],
+        "correctAnswer": "AD",
+        "explanation": ""
+    },
+    {
+        "id": 102,
+        "topic": 1,
+        "questionNumber": 102,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "The translator service provides multi-language support for text translation, transliteration, language detection, and dictionaries.",
+        "explanation": "Speech-to-Text, also known as automatic speech recognition (ASR), is a feature of Speech Services that provides transcription.\nReference:\nhttps://docs.microsoft.com/en-us/azure/cognitive-services/Translator/translator-info-overview https://docs.microsoft.com/en-\nus/legal/cognitive-services/speech-service/speech-to-text/transparency-note"
+    },
+    {
+        "id": 103,
+        "topic": 1,
+        "questionNumber": 103,
+        "type": "unknown",
+        "question": "DRAG DROP -\nYou need to scan the news for articles about your customers and alert employees when there is a negative article. Positive articles\nmust be added to a press book.\nWhich natural language processing tasks should you use to complete the process? To answer, drag the appropriate tasks to the\ncorrect locations. Each task may be used once, more than once, or not at all. You may need to drag the split bar between panes or\nscroll to view content.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Box 1: Entity recognition -",
+        "explanation": "the Named Entity Recognition module in Machine Learning Studio (classic), to identify the names of things, such as people,\ncompanies, or locations in a column of text.\nNamed entity recognition is an important area of research in machine learning and natural language processing (NLP), because\nit can be used to answer many real-world questions, such as:\n✑ Which companies were mentioned in a news article?\n✑ Does a tweet contain the name of a person? Does the tweet also provide his current location?\n✑ Were specified products mentioned in complaints or reviews?\nBox 2: Sentiment Analysis -\nThe Text Analytics API's Sentiment Analysis feature provides two ways for detecting positive and negative sentiment. If you send\na Sentiment Analysis request, the API will return sentiment labels (such as \"negative\", \"neutral\" and \"positive\") and confidence\nscores at the sentence and document-level.\n\n\n\n\n\nReference:\nhttps://docs.microsoft.com/en-us/azure/machine-learning/studio-module-reference/named-entity-recognition\nhttps://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-sentiment-analysis"
+    },
+    {
+        "id": 104,
+        "topic": 1,
+        "questionNumber": 104,
+        "type": "multiple-choice",
+        "question": "You are building a knowledge base by using QnA Maker.\nWhich file format can you use to populate the knowledge base?",
+        "options": [
+            "A. PPTX",
+            "B. XML",
+            "C. ZIP",
+            "D. PDF"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 105,
+        "topic": 1,
+        "questionNumber": 105,
+        "type": "multiple-choice",
+        "question": "In which scenario should you use key phrase extraction?",
+        "options": [
+            "A. identifying whether reviews of a restaurant are positive or negative",
+            "B. generating captions for a video based on the audio track",
+            "C. identifying which documents provide information about the same topics",
+            "D. translating a set of documents from English to German"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 106,
+        "topic": 1,
+        "questionNumber": 106,
+        "type": "multiple-choice",
+        "question": "You have insurance claim reports that are stored as text.\nYou need to extract key terms from the reports to generate summaries.\nWhich type of AI workload should you use?",
+        "options": [
+            "A. natural language processing",
+            "B. conversational AI",
+            "C. anomaly detection",
+            "D. computer vision"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 107,
+        "topic": 1,
+        "questionNumber": 107,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Natural language processing (NLP) is used for tasks such as sentiment analysis, topic detection, language detection, key phrase",
+        "explanation": "extraction, and document categorization.\nReference:\nhttps://docs.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing"
+    },
+    {
+        "id": 108,
+        "topic": 1,
+        "questionNumber": 108,
+        "type": "multiple-choice",
+        "question": "Which AI service can you use to interpret the meaning of a user input such as `Call me back later?`",
+        "options": [
+            "A. Translator",
+            "B. Text Analytics",
+            "C. Speech",
+            "D. Language Understanding (LUIS)"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 109,
+        "topic": 1,
+        "questionNumber": 109,
+        "type": "multiple-choice",
+        "question": "You are developing a chatbot solution in Azure.\nWhich service should you use to determine a user's intent?",
+        "options": [
+            "A. Translator",
+            "B. QnA Maker",
+            "C. Speech",
+            "D. Language Understanding (LUIS)"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 110,
+        "topic": 1,
+        "questionNumber": 110,
+        "type": "multiple-choice",
+        "question": "You need to make the written press releases of your company available in a range of languages.\nWhich service should you use?",
+        "options": [
+            "A. Translator",
+            "B. Text Analytics",
+            "C. Speech",
+            "D. Language Understanding (LUIS)"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 111,
+        "topic": 1,
+        "questionNumber": 111,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "The Text Analytics API is a cloud-based service that provides advanced natural language processing over raw text, and includes",
+        "explanation": "four main functions: sentiment analysis, key phrase extraction, named entity recognition, and language detection.\nBox 1: Yes -\nYou can detect which language the input text is written in and report a single language code for every document submitted on\nthe request in a wide range of languages, variants, dialects, and some regional/cultural languages. The language code is paired\nwith a score indicating the strength of the score.\nBox 2: No -\nBox 3: Yes -\nNamed Entity Recognition: Identify and categorize entities in your text as people, places, organizations, date/time, quantities,\npercentages, currencies, and more.\nWell-known entities are also recognized and linked to more information on the web.\nReference:\nhttps://docs.microsoft.com/en-us/azure/cognitive-services/text-analytics/overview"
+    },
+    {
+        "id": 112,
+        "topic": 1,
+        "questionNumber": 112,
+        "type": "unknown",
+        "question": "DRAG DROP -\nMatch the types of natural languages processing workloads to the appropriate scenarios.\nTo answer, drag the appropriate workload type from the column on the left to its scenario on the right. Each workload type may\nbe used once, more than once, or not at all.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Box 1: Entity recognition -",
+        "explanation": "Named Entity Recognition (NER) is the ability to identify different entities in text and categorize them into pre-defined classes or\ntypes such as: person, location, event, product, and organization.\nBox 2: Sentiment analysis -\nSentiment Analysis is the process of determining whether a piece of writing is positive, negative or neutral.\nBox 3: Translation -\nUsing Microsoft's Translator text API\nThis versatile API from Microsoft can be used for the following:\nTranslate text from one language to another.\nTransliterate text from one script to another.\nDetecting language of the input text.\nFind alternate translations to specific text.\nDetermine the sentence length.\nReference:\n\n\n\n\n\nhttps://docs.microsoft.com/en-in/azure/cognitive-services/text-analytics/how-tos/text-analytics-how-to-entity-linking?\ntabs=version-3-preview https://azure.microsoft.com/en-us/services/cognitive-services/text-analytics"
+    },
+    {
+        "id": 113,
+        "topic": 1,
+        "questionNumber": 113,
+        "type": "unknown",
+        "question": "For each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Box 1: Yes -",
+        "explanation": "Content Moderator is part of Microsoft Cognitive Services allowing businesses to use machine assisted moderation of text,\nimages, and videos that augment human review.\nThe text moderation capability now includes a new machine-learning based text classification feature which uses a trained\nmodel to identify possible abusive, derogatory or discriminatory language such as slang, abbreviated words, offensive, and\nintentionally misspelled words for review.\nBox 2: No -\nAzure's Computer Vision service gives you access to advanced algorithms that process images and return information based on\nthe visual features you're interested in. For example, Computer Vision can determine whether an image contains adult content,\nfind specific brands or objects, or find human faces.\nBox 3: Yes -\nNatural language processing (NLP) is used for tasks such as sentiment analysis, topic detection, language detection, key phrase\nextraction, and document categorization.\nSentiment Analysis is the process of determining whether a piece of writing is positive, negative or neutral.\nReference:\nhttps://azure.microsoft.com/es-es/blog/machine-assisted-text-classification-on-content-moderator-public-preview/\nhttps://docs.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing"
+    },
+    {
+        "id": 114,
+        "topic": 1,
+        "questionNumber": 114,
+        "type": "multiple-choice",
+        "question": "You are developing a natural language processing solution in Azure. The solution will analyze customer reviews and determine\nhow positive or negative each review is.\nThis is an example of which type of natural language processing workload?",
+        "options": [
+            "A. language detection",
+            "B. sentiment analysis",
+            "C. key phrase extraction",
+            "D. entity recognition"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 115,
+        "topic": 1,
+        "questionNumber": 115,
+        "type": "multiple-choice",
+        "question": "You use natural language processing to process text from a Microsoft news story.\nYou receive the output shown in the following exhibit.\nWhich type of natural languages processing was performed?",
+        "options": [
+            "A. entity recognition",
+            "B. key phrase extraction",
+            "C. sentiment analysis",
+            "D. translation"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 116,
+        "topic": 1,
+        "questionNumber": 116,
+        "type": "unknown",
+        "question": "DRAG DROP -\nYou plan to apply Text Analytics API features to a technical support ticketing system.\nMatch the Text Analytics API features to the appropriate natural language processing scenarios.\nTo answer, drag the appropriate feature from the column on the left to its scenario on the right. Each feature may be used once,\nmore than once, or not at all.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Box1: Sentiment analysis -",
+        "explanation": "Sentiment Analysis is the process of determining whether a piece of writing is positive, negative or neutral.\nBox 2: Broad entity extraction -\nBroad entity extraction: Identify important concepts in text, including key\nKey phrase extraction/ Broad entity extraction: Identify important concepts in text, including key phrases and named entities\nsuch as people, places, and organizations.\nBox 3: Entity Recognition -\nNamed Entity Recognition: Identify and categorize entities in your text as people, places, organizations, date/time, quantities,\npercentages, currencies, and more.\nWell-known entities are also recognized and linked to more information on the web.\nReference:\nhttps://docs.microsoft.com/en-us/azure/architecture/data-guide/technology-choices/natural-language-processing\nhttps://azure.microsoft.com/en-us/services/cognitive-services/text-analytics"
+    },
+    {
+        "id": 117,
+        "topic": 1,
+        "questionNumber": 117,
+        "type": "multiple-choice",
+        "question": "You are authoring a Language Understanding (LUIS) application to support a music festival.\nYou want users to be able to ask questions about scheduled shows, such as: `Which act is playing on the main stage?`\nThe question `Which act is playing on the main stage?` is an example of which type of element?",
+        "options": [
+            "A. an intent",
+            "B. an utterance",
+            "C. a domain",
+            "D. an entity"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 118,
+        "topic": 1,
+        "questionNumber": 118,
+        "type": "multiple-choice",
+        "question": "You build a QnA Maker bot by using a frequently asked questions (FAQ) page.\nYou need to add professional greetings and other responses to make the bot more user friendly.\nWhat should you do?",
+        "options": [
+            "A. Increase the confidence threshold of responses",
+            "B. Enable active learning",
+            "C. Create multi-turn questions",
+            "D. Add chit-chat"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 119,
+        "topic": 1,
+        "questionNumber": 119,
+        "type": "multiple-choice",
+        "question": "You need to develop a chatbot for a website. The chatbot must answer users' questions based on the information in the following\ndocuments:\n✑ A product troubleshooting guide in a Microsoft Word document\n✑ A frequently asked questions (FAQ) list on a webpage\nWhich service should you use to process the documents?",
+        "options": [
+            "A. Azure Bot Service",
+            "B. Language Understanding",
+            "C. Text Analytics",
+            "D. QnA Maker"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 120,
+        "topic": 1,
+        "questionNumber": 120,
+        "type": "multiple-choice",
+        "question": "You are building a Language Understanding model for an e-commerce business.\nYou need to ensure that the model detects when utterances are outside the intended scope of the model.\nWhat should you do?",
+        "options": [
+            "A. Test the model by using new utterances",
+            "B. Add utterances to the None intent",
+            "C. Create a prebuilt task entity",
+            "D. Create a new model"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 121,
+        "topic": 1,
+        "questionNumber": 121,
+        "type": "multiple-choice",
+        "question": "Which two scenarios are examples of a natural language processing workload? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. monitoring the temperature of machinery to turn on a fan when the temperature reaches a specific threshold",
+            "B. a smart device in the home that responds to questions such as, \"What will the weather be like today?\"",
+            "C. a website that uses a knowledge base to interactively respond to users' questions",
+            "D. assembly line machinery that autonomously inserts headlamps into cars"
+        ],
+        "correctAnswer": "BC",
+        "explanation": ""
+    },
+    {
+        "id": 122,
+        "topic": 1,
+        "questionNumber": 122,
+        "type": "multiple-choice",
+        "question": "You have an AI solution that provides users with the ability to control smart devices by using verbal commands.\nWhich two types of natural language processing (NLP) workloads does the solution use? Each correct answer presents part of the\nsolution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. text-to-speech",
+            "B. key phrase extraction",
+            "C. speech-to-text",
+            "D. language modeling",
+            "E. translation"
+        ],
+        "correctAnswer": "CD",
+        "explanation": ""
+    },
+    {
+        "id": 123,
+        "topic": 1,
+        "questionNumber": 123,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Box 1: Yes -",
+        "explanation": "Azure Cognitive Service for Language provides features including:\n* Language detection: This pre-configured feature evaluates text, and determines the language it was written in. It returns a\nlanguage identifier and a score that indicates the strength of the analysis.\nBox 2: No -\nHandwritten detection is part of OCR (Optical Character Recognition).\nBox 3: Yes -\nAzure Cognitive Service for Language provides features including:\n* Named Entity Recognition (NER): This pre-configured feature identifies entities in text across several pre-defined categories.\nNote: Named entity recognition is a natural language processing technique that can automatically scan entire articles and pull\nout some fundamental entities in a text and classify them into predefined categories. Entities may be,\nOrganizations,\nQuantities,\nMonetary values,\nPercentages, and more.\nPeople's names -\nCompany names -\nGeographic locations (Both physical and political)\nProduct names -\n\n\n\n\n\nDates and times -\nAmounts of money -\nNames of events -\nReference:\nhttps://docs.microsoft.com/en-us/azure/cognitive-services/language-service/overview"
+    },
+    {
+        "id": 124,
+        "topic": 1,
+        "questionNumber": 124,
+        "type": "unknown",
+        "question": "You plan to use Azure Cognitive Services to develop a voice controlled personal assistant app.\nMatch the Azure Cognitive Services to the appropriate tasks.\nTo answer, drag the appropriate service from the column on the left to its description on the right. Each service may be used once,\nmore than once, or not at all.\nNOTE: Each correct selection is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "Box 1: Speech -",
+        "explanation": "The Speech service provides speech-to-text and text-to-speech capabilities with an Azure Speech resource. You can transcribe\nspeech to text with high accuracy, produce natural-sounding text-to-speech voices, translate spoken audio, and use speaker\nrecognition during conversations.\nBox 2: Language service -\nBuild applications with conversational language understanding, a Cognitive Service for Language feature that understands\nnatural language to interpret user goals and extracts key information from conversational phrases. Create multilingual,\ncustomizable intent classification and entity extraction models for your domain- specific keywords or phrases across 96\nlanguages.\nBox 3: Speech -\nIncorrect:\nNot Translator text: Text translation is a cloud-based REST API feature of the Translator service that uses neural machine\ntranslation technology to enable quick and accurate source-to-target text translation in real time across all supported\nlanguages.\nReference:\nhttps://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/overview https://azure.microsoft.com/en-\nus/services/cognitive-services/conversational-language-understanding/ https://docs.microsoft.com/en-us/azure/cognitive-\nservices/translator/text-translation-overview"
+    },
+    {
+        "id": 125,
+        "topic": 1,
+        "questionNumber": 125,
+        "type": "multiple-choice",
+        "question": "You need to make the written press releases of your company available in a range of languages.\nWhich service should you use?",
+        "options": [
+            "A. Speech",
+            "B. Language",
+            "C. Translator",
+            "D. Personalizer"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 126,
+        "topic": 1,
+        "questionNumber": 126,
+        "type": "multiple-choice",
+        "question": "You have insurance claim reports that are stored as text.\nYou need to extract key terms from the reports to generate summaries.\nWhich type of AI workload should you use?",
+        "options": [
+            "A. anomaly detection",
+            "B. natural language processing",
+            "C. computer vision",
+            "D. knowledge mining"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 127,
+        "topic": 1,
+        "questionNumber": 127,
+        "type": "multiple-choice",
+        "question": "You need to build an app that will read recipe instructions aloud to support users who have reduced vision.\nWhich version service should you use?",
+        "options": [
+            "A. Language service",
+            "B. Translator",
+            "C. Speech",
+            "D. Personalizer"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 128,
+        "topic": 1,
+        "questionNumber": 128,
+        "type": "multiple-choice",
+        "question": "You have a webchat bot that provides responses from a QnA Maker knowledge base.\nYou need to ensure that the bot uses user feedback to improve the relevance of the responses over time.\nWhat should you use?",
+        "options": [
+            "A. key phrase extraction",
+            "B. sentiment analysis",
+            "C. business logic",
+            "D. active learning"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 129,
+        "topic": 1,
+        "questionNumber": 129,
+        "type": "multiple-choice",
+        "question": "You are developing a conversational AI solution that will communicate with users through multiple channels including email,\nMicrosoft Teams, and webchat.\nWhich service should you use?",
+        "options": [
+            "A. Text Analytics",
+            "B. Azure Bot Service",
+            "C. Translator",
+            "D. Form Recognizer"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 130,
+        "topic": 1,
+        "questionNumber": 130,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 131,
+        "topic": 1,
+        "questionNumber": 131,
+        "type": "multiple-choice",
+        "question": "You need to provide content for a business chatbot that will help answer simple user queries.\nWhat are three ways to create question and answer text by using QnA Maker? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. Generate the questions and answers from an existing webpage.",
+            "B. Use automated machine learning to train a model based on a file that contains the questions.",
+            "C. Manually enter the questions and answers.",
+            "D. Connect the bot to the Cortana channel and ask questions by using Cortana.",
+            "E. Import chit-chat content from a predefined data source."
+        ],
+        "correctAnswer": "ACE",
+        "explanation": ""
+    },
+    {
+        "id": 132,
+        "topic": 1,
+        "questionNumber": 132,
+        "type": "multiple-choice",
+        "question": "You have a frequently asked questions (FAQ) PDF file.\nYou need to create a conversational support system based on the FAQ.\nWhich service should you use?",
+        "options": [
+            "A. QnA Maker",
+            "B. Text Analytics",
+            "C. Computer Vision",
+            "D. Language Understanding (LUIS)"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 133,
+        "topic": 1,
+        "questionNumber": 133,
+        "type": "multiple-choice",
+        "question": "You need to reduce the load on telephone operators by implementing a chatbot to answer simple questions with predefined\nanswers.\nWhich two AI service should you use to achieve the goal? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. Text Analytics",
+            "B. QnA Maker",
+            "C. Azure Bot Service",
+            "D. Translator"
+        ],
+        "correctAnswer": "BC",
+        "explanation": ""
+    },
+    {
+        "id": 134,
+        "topic": 1,
+        "questionNumber": 134,
+        "type": "multiple-choice",
+        "question": "Which two scenarios are examples of a conversational AI workload? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. a smart device in the home that responds to questions such as €גWhat will the weather be like today? €ג",
+            "B. a website that uses a knowledge base to interactively respond to users' questions",
+            "C. assembly line machinery that autonomously inserts headlamps into cars",
+            "D. monitoring the temperature of machinery to turn on a fan when the temperature reaches a specific threshold"
+        ],
+        "correctAnswer": "AB",
+        "explanation": ""
+    },
+    {
+        "id": 135,
+        "topic": 1,
+        "questionNumber": 135,
+        "type": "multiple-choice",
+        "question": "You have the process shown in the following exhibit.\nWhich type of AI solution is shown in the diagram?",
+        "options": [
+            "A. a sentiment analysis solution",
+            "B. a chatbot",
+            "C. a machine learning model",
+            "D. a computer vision application"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 136,
+        "topic": 1,
+        "questionNumber": 136,
+        "type": "multiple-choice",
+        "question": "You need to develop a web-based AI solution for a customer support system. Users must be able to interact with a web app that\nwill guide them to the best resource or answer.\nWhich service should you use?",
+        "options": [
+            "A. Custom Vision",
+            "B. QnA Maker",
+            "C. Translator Text",
+            "D. Face"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 137,
+        "topic": 1,
+        "questionNumber": 137,
+        "type": "multiple-choice",
+        "question": "Which AI service should you use to create a bot from a frequently asked questions (FAQ) document?",
+        "options": [
+            "A. QnA Maker",
+            "B. Language Understanding (LUIS)",
+            "C. Text Analytics",
+            "D. Speech"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 138,
+        "topic": 1,
+        "questionNumber": 138,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.\nHot Area:",
+        "options": [],
+        "correctAnswer": "With Microsoft's Conversational AI tools developers can build, connect, deploy, and manage intelligent bots that naturally",
+        "explanation": "interact with their users on a website, app, Cortana, Microsoft Teams, Skype, Facebook Messenger, Slack, and more.\nReference:\nhttps://azure.microsoft.com/en-in/blog/microsoft-conversational-ai-tools-enable-developers-to-build-connect-and-manage-\nintelligent-bots"
+    },
+    {
+        "id": 139,
+        "topic": 1,
+        "questionNumber": 139,
+        "type": "multiple-choice",
+        "question": "Which scenario is an example of a webchat bot?",
+        "options": [
+            "A. Determine whether reviews entered on a website for a concert are positive or negative, and then add a thumbs up or\nthumbs down emoji to the reviews.",
+            "B. Translate into English questions entered by customers at a kiosk so that the appropriate person can call the customers back.",
+            "C. Accept questions through email, and then route the email messages to the correct person based on the content of the\nmessage.",
+            "D. From a website interface, answer common questions about scheduled events and ticket purchases for a music festival.\nMost Voted"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 140,
+        "topic": 1,
+        "questionNumber": 140,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-gb/azure/cognitive-services/qnamaker/concepts/data-sources-and-content\nhttps://docs.microsoft.com/en-us/azure/cognitive-services/luis/choose-natural-language-processing-service"
+    },
+    {
+        "id": 141,
+        "topic": 1,
+        "questionNumber": 141,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 142,
+        "topic": 1,
+        "questionNumber": 142,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 143,
+        "topic": 1,
+        "questionNumber": 143,
+        "type": "multiple-choice",
+        "question": "Which two scenarios are examples of a conversational AI workload? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. a telephone answering service that has a pre-recorder message",
+            "B. a chatbot that provides users with the ability to find answers on a website by themselves",
+            "C. telephone voice menus to reduce the load on human resources",
+            "D. a service that creates frequently asked questions (FAQ) documents by crawling public websites"
+        ],
+        "correctAnswer": "BC",
+        "explanation": ""
+    },
+    {
+        "id": 144,
+        "topic": 1,
+        "questionNumber": 144,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Box 1: Yes -",
+        "explanation": "Azure bot service can be integrated with the powerful AI capabilities with Azure Cognitive Services.\nBox 2: Yes -\nAzure bot service engages with customers in a conversational manner.\nBox 3: No -\nThe QnA Maker service creates knowledge base, not question and answers sets.\nNote: You can use the QnA Maker service and a knowledge base to add question-and-answer support to your bot. When you\ncreate your knowledge base, you seed it with questions and answers.\nReference:\nhttps://docs.microsoft.com/en-us/azure/bot-service/bot-builder-tutorial-add-qna"
+    },
+    {
+        "id": 145,
+        "topic": 1,
+        "questionNumber": 145,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Reference:",
+        "explanation": "https://docs.microsoft.com/en-us/azure/architecture/reference-architectures/ai/conversational-bot\nhttps://docs.microsoft.com/en-us/azure/bot-service/bot-builder-webchat-overview?view=azure-bot-service-4.0"
+    },
+    {
+        "id": 146,
+        "topic": 1,
+        "questionNumber": 146,
+        "type": "multiple-choice",
+        "question": "You have a knowledge base of frequently asked questions (FAQ).\nYou create a bot that uses the knowledge base to respond to customer requests.\nYou need to identify what the bot can perform without adding additional skills.\nWhat should you identify?",
+        "options": [
+            "A. Register customer purchases.",
+            "B. Register customer complaints.",
+            "C. Answer questions from multiple users simultaneously.",
+            "D. Provide customers with return materials authorization (RMA) numbers."
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 147,
+        "topic": 1,
+        "questionNumber": 147,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 148,
+        "topic": 1,
+        "questionNumber": 148,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Box 1: No -",
+        "explanation": "Build conversational experiences with Power Virtual Agents and Azure Bot Service\nAzure Bot Service provides an integrated development environment for bot building. Its integration with Power Virtual Agents, a\nfully hosted low-code platform, enables developers of all technical abilities build conversational AI bots\"€גno code needed.\nBox 2: Yes -\nBox 3: Yes -\nYou can configure your bot to communicate with people via Microsoft Teams.\nReference:\nhttps://azure.microsoft.com/en-us/services/bot-services/#overview https://docs.microsoft.com/en-us/azure/bot-\nservice/channel-connect-teams"
+    },
+    {
+        "id": 149,
+        "topic": 1,
+        "questionNumber": 149,
+        "type": "unknown",
+        "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.\nHot Area:",
+        "options": [],
+        "correctAnswer": "Azure's Computer Vision service gives you access to advanced algorithms that process images and return information based on",
+        "explanation": "the visual features you're interested in.\n* Optical Character Recognition (OCR)\n* Spatial Analysis\n* Image Analysis\nThe Image Analysis service extracts many visual features from images, such as objects, faces, adult content, and auto-generated\ntext descriptions. Follow the\nImage Analysis quickstart to get started.\nReference:\nhttps://docs.microsoft.com/en-us/azure/cognitive-services/computer-vision/overview"
+    },
+    {
+        "id": 150,
+        "topic": 1,
+        "questionNumber": 150,
+        "type": "multiple-choice",
+        "question": "You have an Azure Machine Learning pipeline that contains a Split Data module.\nThe Split Data module outputs to a Train Model module and a Score Model module.\nWhat is the function of the Split Data module?",
+        "options": [
+            "A. scaling numeric variables so that they are within a consistent numeric range",
+            "B. creating training and validation datasets",
+            "C. diverting records that have missing data",
+            "D. selecting columns that must be included in the model"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 151,
+        "topic": 1,
+        "questionNumber": 151,
+        "type": "multiple-choice",
+        "question": "Which statement is an example of a Microsoft responsible AI principle?",
+        "options": [
+            "A. AI systems must use only publicly available data",
+            "B. AI systems must be transparent and inclusive",
+            "C. AI systems must keep personal details public",
+            "D. AI systems must protect the interests of the company"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 152,
+        "topic": 1,
+        "questionNumber": 152,
+        "type": "unknown",
+        "question": "DRAG DROP -\nMatch the types of natural language processing workloads to the appropriate scenarios.\nTo answer, drag the appropriate workload type from the column on the left to its scenario on the right. Each workload type may\nbe used once, more than once, or not at all.\nNOTE: Each correct match is worth one point.\nSelect and Place:",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 153,
+        "topic": 1,
+        "questionNumber": 153,
+        "type": "multiple-choice",
+        "question": "You need to reduce the load on telephone operators by implementing a chatbot to answer simple questions with predefined\nanswers.\nWhich two AI services should you use to achieve the goal? Each correct answers presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. Azure Machine Learning",
+            "B. Azure Bot Service",
+            "C. Language Service",
+            "D. Translator"
+        ],
+        "correctAnswer": "BC",
+        "explanation": ""
+    },
+    {
+        "id": 154,
+        "topic": 1,
+        "questionNumber": 154,
+        "type": "unknown",
+        "question": "DRAG DROP\n-\nMatch the principles of responsible AI to the appropriate descriptions.\nTo answer, drag the appropriate principle from the column on the left to its description on the right. Each principle may be used\nonce, more than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 155,
+        "topic": 1,
+        "questionNumber": 155,
+        "type": "multiple-choice",
+        "question": "During the process of Machine Learning, when should you review evaluation metrics.",
+        "options": [
+            "A. Before you train a model.",
+            "B. After you clean the data.",
+            "C. Before you choose the type of model.",
+            "D. After you test a model on the validation data."
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 156,
+        "topic": 1,
+        "questionNumber": 156,
+        "type": "multiple-choice",
+        "question": "You have a natural language processing (NLP) model that was created by using data obtained without permission.\nWhich Microsoft principle for responsible AI does this breach?",
+        "options": [
+            "A. reliability and safety",
+            "B. privacy and security",
+            "C. inclusiveness",
+            "D. transparency"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 157,
+        "topic": 1,
+        "questionNumber": 157,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 158,
+        "topic": 1,
+        "questionNumber": 158,
+        "type": "unknown",
+        "question": "DRAG DROP -\nMatch the services to the appropriate descriptions.\nTo answer, drag the appropriate service from the column on the left to its description on the right. Each service may be used once,\nmore than once, or not at all. You may need to drag the split bar between panes or scroll to view content.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 159,
+        "topic": 1,
+        "questionNumber": 159,
+        "type": "multiple-choice",
+        "question": "Which machine learning technique can be used for anomaly detection?",
+        "options": [
+            "A. A machine learning technique that classifies objects based on user supplied images.",
+            "B. A machine learning technique that understands written and spoken language.",
+            "C. A machine learning technique that classifies images based on their contents.",
+            "D. A machine learning technique that analyzes data over time and identifies unusual changes."
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 160,
+        "topic": 1,
+        "questionNumber": 160,
+        "type": "multiple-choice",
+        "question": "You have an AI-based loan approval system.\nDuring testing, you discover that the system has a gender bias.\nWhich responsible Al principle does this violate?",
+        "options": [
+            "A. accountability",
+            "B. reliability and safety",
+            "C. transparency",
+            "D. fairness"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 161,
+        "topic": 1,
+        "questionNumber": 161,
+        "type": "multiple-choice",
+        "question": "You are developing a system to predict the prices of insurance for drivers in the United Kingdom.\nYou need to minimize bias in the system.\nWhat should you do?",
+        "options": [
+            "A. Remove information about protected characteristics from the data before sampling.",
+            "B. Take a training sample that is representative of the population in the United Kingdom.",
+            "C. Create a training dataset that uses data from global insurers.",
+            "D. Take a completely random training sample."
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 162,
+        "topic": 1,
+        "questionNumber": 162,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 163,
+        "topic": 1,
+        "questionNumber": 163,
+        "type": "multiple-choice",
+        "question": "You have a dataset.\nYou need to build an Azure Machine Learning classification model that will identify defective products.\nWhat should you do first?",
+        "options": [
+            "A. Load the dataset.",
+            "B. Create a clustering model.",
+            "C. Split the data into training and testing datasets.",
+            "D. Create a classification model."
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 164,
+        "topic": 1,
+        "questionNumber": 164,
+        "type": "multiple-choice",
+        "question": "You use Azure Machine Learning designer to build a model pipeline.\nWhat should you create before you can run the pipeline?",
+        "options": [
+            "A. a registered model",
+            "B. a compute resource",
+            "C. a Jupyter notebook"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 165,
+        "topic": 1,
+        "questionNumber": 165,
+        "type": "unknown",
+        "question": "DRAG DROP\n-\nMatch the tool to the Azure Machine Learning task.\nTo answer, drag the appropriate tool from the column on the left to its tasks on the right. Each tool may be used once, more than\nonce, or not at all.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 166,
+        "topic": 1,
+        "questionNumber": 166,
+        "type": "multiple-choice",
+        "question": "You need to create a customer support solution to help customers access information. The solution must support email, phone,\nand live chat channels.\nWhich type of Al solution should you use?",
+        "options": [
+            "A. machine learning",
+            "B. computer vision",
+            "C. chatbot",
+            "D. natural language processing (NLP)"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 167,
+        "topic": 1,
+        "questionNumber": 167,
+        "type": "unknown",
+        "question": "DRAG DROP\n-\nMatch the types of AI workloads to the appropriate scenarios.\nTo answer, drag the appropriate workload type from the column on the left to its scenario on the right. Each workload type may\nbe used once, more than once, or not at all.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 168,
+        "topic": 1,
+        "questionNumber": 168,
+        "type": "multiple-choice",
+        "question": "Predicting how many vehicles will travel across a bridge on a give day is an example of _______.\nSelect the answer that correctly completes the sentence.",
+        "options": [
+            "A. regression",
+            "B. translation",
+            "C. classification",
+            "D. clustering"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 169,
+        "topic": 1,
+        "questionNumber": 169,
+        "type": "multiple-choice",
+        "question": "In a machine learning model, the data that is used as inputs are called ________.\nSelect the answer that correctly completes the sentence.",
+        "options": [
+            "A. dataset",
+            "B. labels",
+            "C. variables"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 170,
+        "topic": 1,
+        "questionNumber": 170,
+        "type": "unknown",
+        "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 171,
+        "topic": 1,
+        "questionNumber": 171,
+        "type": "unknown",
+        "question": "DRAG DROP\n-\nYou plan to deploy an Azure Machine Learning model by using the Machine Learning designer.\nWhich four actions should you perform in sequence? To answer, move the appropriate actions from the list of actions to the\nanswer area and arrange them in the correct order.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 172,
+        "topic": 1,
+        "questionNumber": 172,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 173,
+        "topic": 1,
+        "questionNumber": 173,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 174,
+        "topic": 1,
+        "questionNumber": 174,
+        "type": "multiple-choice",
+        "question": "You need to create a clustering model and evaluate the model by using Azure Machine Learning designer.\nWhat should you do?",
+        "options": [
+            "A. Split the original dataset into a dataset for training and a dataset for testing. Use the testing dataset for evaluation.\nMost Voted",
+            "B. Use the original dataset for training and evaluation.",
+            "C. Split the original dataset into a dataset for features and a dataset for labels. Use the features dataset for evaluation.",
+            "D. Split the original dataset into a dataset for training and a dataset for testing. Use the training dataset for evaluation."
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 175,
+        "topic": 1,
+        "questionNumber": 175,
+        "type": "multiple-choice",
+        "question": "You have a dataset that contains the columns shown in the following table.\nYou have a machine learning model that predicts the value of ColumnE based on the other numeric columns.\nWhich type of model is this?",
+        "options": [
+            "A. analysis",
+            "B. clustering",
+            "C. regression"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 176,
+        "topic": 1,
+        "questionNumber": 176,
+        "type": "multiple-choice",
+        "question": "You need to track multiple versions of a model that was trained by using Azure Machine Learning.\nWhat should you do?",
+        "options": [
+            "A. Explain the model.",
+            "B. Register the model.",
+            "C. Register the training data.",
+            "D. Provision an inference cluster."
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 177,
+        "topic": 1,
+        "questionNumber": 177,
+        "type": "multiple-choice",
+        "question": "You need to identify groups of rows with similar numeric values in a dataset.\nWhich type of machine learning should you use?",
+        "options": [
+            "A. clustering",
+            "B. regression",
+            "C. classification"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 178,
+        "topic": 1,
+        "questionNumber": 178,
+        "type": "unknown",
+        "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 179,
+        "topic": 1,
+        "questionNumber": 179,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 180,
+        "topic": 1,
+        "questionNumber": 180,
+        "type": "multiple-choice",
+        "question": "A historian can use ________ to digitize newspaper articles.\nSelect the answer that correctly completes the sentence.",
+        "options": [
+            "A. Object detection",
+            "B. Facial recognition",
+            "C. Image classification",
+            "D. Optical character recognition (OCR)"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 181,
+        "topic": 1,
+        "questionNumber": 181,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 182,
+        "topic": 1,
+        "questionNumber": 182,
+        "type": "multiple-choice",
+        "question": "You need to create a model that labels a collection of your personal digital photographs.\nWhich Azure Cognitive Services service should you use?",
+        "options": [
+            "A. Form Recognizer",
+            "B. Custom Vision",
+            "C. Language",
+            "D. Computer Vision"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 183,
+        "topic": 1,
+        "questionNumber": 183,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 184,
+        "topic": 1,
+        "questionNumber": 184,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 185,
+        "topic": 1,
+        "questionNumber": 185,
+        "type": "unknown",
+        "question": "DRAG DROP\n-\nMatch the Azure Cognitive Services to the appropriate actions.\nTo answer, drag the appropriate service from the column on the left to its action on the right. Each service may be used once,\nmore than once, or not at all.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 186,
+        "topic": 1,
+        "questionNumber": 186,
+        "type": "unknown",
+        "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 187,
+        "topic": 1,
+        "questionNumber": 187,
+        "type": "multiple-choice",
+        "question": "Your company manufactures widgets.\nYou have 1,000 digital photos of the widgets.\nYou need to identify the location of the widgets within the photos.\nWhat should you use?",
+        "options": [
+            "A. Computer Vision Spatial Analysis",
+            "B. Custom Vision object detection",
+            "C. Computer Vision Image Analysis",
+            "D. Custom Vision classification"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 188,
+        "topic": 1,
+        "questionNumber": 188,
+        "type": "multiple-choice",
+        "question": "You need to convert handwritten notes into digital text.\nWhich type of computer vision should you use?",
+        "options": [
+            "A. facial detection",
+            "B. optical character recognition (OCR)",
+            "C. image classification",
+            "D. object detection"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 189,
+        "topic": 1,
+        "questionNumber": 189,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 190,
+        "topic": 1,
+        "questionNumber": 190,
+        "type": "multiple-choice",
+        "question": "You need to develop a mobile app for employees to scan and store their expenses while travelling.\nWhich type of computer vision should you use?",
+        "options": [
+            "A. face detection",
+            "B. image classification",
+            "C. object detection",
+            "D. optical character recognition (OCR)"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 191,
+        "topic": 1,
+        "questionNumber": 191,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 192,
+        "topic": 1,
+        "questionNumber": 192,
+        "type": "unknown",
+        "question": "HOTSPOT -\nTo complete the sentence, select the appropriate option in the answer area.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 193,
+        "topic": 1,
+        "questionNumber": 193,
+        "type": "unknown",
+        "question": "DRAG DROP\n-\nMatch the Azure Cognitive Services to the appropriate AI workloads.\nTo answer, drag the appropriate service from the column on the left to its workload on the right. Each service may be used once,\nmore than once, or not at all.\nNOTE: Each correct match is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 194,
+        "topic": 1,
+        "questionNumber": 194,
+        "type": "multiple-choice",
+        "question": "You need to implement a pre-built solution that will identify well-known brands in digital photographs.\nWhich Azure Cognitive Services service should you use?",
+        "options": [
+            "A. Custom Vision",
+            "B. Form Recognizer",
+            "C. Face",
+            "D. Computer Vision"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 195,
+        "topic": 1,
+        "questionNumber": 195,
+        "type": "multiple-choice",
+        "question": "Natural language processing can be used to __________.\nSelect the answer that correctly completes the sentence.",
+        "options": [
+            "A. Analyze video content",
+            "B. Generate speech",
+            "C. Classify email messages as work-related or personal.",
+            "D. Classify images"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 196,
+        "topic": 1,
+        "questionNumber": 196,
+        "type": "multiple-choice",
+        "question": "You plan to develop a bot that will enable users to query a knowledge base by using natural language processing.\nWhich two services should you include in the solution? Each correct answer presents part of the solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. Language Service",
+            "B. Azure Bot Service",
+            "C. Form Recognizer",
+            "D. Anomaly Detector"
+        ],
+        "correctAnswer": "AB",
+        "explanation": ""
+    },
+    {
+        "id": 197,
+        "topic": 1,
+        "questionNumber": 197,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 198,
+        "topic": 1,
+        "questionNumber": 198,
+        "type": "multiple-choice",
+        "question": "An app that analyzes social media posts to identify their tone is an example of which type of natural language processing (NLP)\nworkload?",
+        "options": [
+            "A. sentiment analysis",
+            "B. speech recognition",
+            "C. key phrase extraction",
+            "D. entity recognition"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 199,
+        "topic": 1,
+        "questionNumber": 199,
+        "type": "multiple-choice",
+        "question": "You are building a chatbot that will use natural language processing (NLP) to perform the following actions based on the text\ninput of a user.\n• Accept customer orders.\n• Retrieve support documents.\n• Retrieve order status updates.\nWhich type of NLP should you use?",
+        "options": [
+            "A. sentiment analysis",
+            "B. named entity recognition",
+            "C. translation",
+            "D. language modeling"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 200,
+        "topic": 1,
+        "questionNumber": 200,
+        "type": "unknown",
+        "question": "DRAG DROP\n-\nMatch the Azure Cognitive Services service to the appropriate actions.\nTo answer, drag the appropriate service from the column on the left to its action on the right. Each service may be used once,\nmore than once, or not at all.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 201,
+        "topic": 1,
+        "questionNumber": 201,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 202,
+        "topic": 1,
+        "questionNumber": 202,
+        "type": "multiple-choice",
+        "question": "You have a website that includes customer reviews.\nYou need to store the reviews in English and present the reviews to users in their respective language by recognizing each user's\ngeographical location.\nWhich type of natural language processing workload should you use?",
+        "options": [
+            "A. key phrase extraction",
+            "B. speech recognition",
+            "C. language modeling",
+            "D. translation"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 203,
+        "topic": 1,
+        "questionNumber": 203,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 204,
+        "topic": 1,
+        "questionNumber": 204,
+        "type": "unknown",
+        "question": "HOTSPOT -\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 205,
+        "topic": 1,
+        "questionNumber": 205,
+        "type": "multiple-choice",
+        "question": "You have a solution that analyzes social media posts to extract the mentions of city names and the city names discussed most\nfrequently.\nWhich type of natural language processing (NLP) workload does the solution use?",
+        "options": [
+            "A. speech recognition",
+            "B. sentiment analysis",
+            "C. key phrase extraction",
+            "D. entity recognition"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 206,
+        "topic": 1,
+        "questionNumber": 206,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 207,
+        "topic": 1,
+        "questionNumber": 207,
+        "type": "multiple-choice",
+        "question": "You are developing a solution that uses the Language service.\nYou need to identify the main talking points in a collection of documents.\nWhich type of natural language processing should you use?",
+        "options": [
+            "A. language detection",
+            "B. sentiment analysis",
+            "C. entity recognition",
+            "D. key phrase extraction"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 208,
+        "topic": 1,
+        "questionNumber": 208,
+        "type": "unknown",
+        "question": "DRAG DROP -\nYou are designing a system that will generate insurance quotes automatically.\nMatch the Microsoft responsible AI principles to the appropriate requirements.\nTo answer, drag the appropriate principle from the column on the left to its requirement on the right. Each principle may be used\nonce, more than once, or not at all.\nNOTE: Each correct match is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 209,
+        "topic": 1,
+        "questionNumber": 209,
+        "type": "multiple-choice",
+        "question": "Which type of natural language processing (NLP) entity is used to identify a phone number?",
+        "options": [
+            "A. regular expression",
+            "B. machine-learned",
+            "C. list",
+            "D. Pattern.any"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 210,
+        "topic": 1,
+        "questionNumber": 210,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nTo complete the sentence, select the appropriate option in the answer area.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 211,
+        "topic": 1,
+        "questionNumber": 211,
+        "type": "multiple-choice",
+        "question": "Your company is exploring the use of voice recognition technologies in its smart home devices. The company wants to identify any\nbarriers that might unintentionally leave out specific user groups.\nThis is an example of which Microsoft guiding principle for responsible AI?",
+        "options": [
+            "A. accountability",
+            "B. fairness",
+            "C. privacy and security",
+            "D. inclusiveness"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 212,
+        "topic": 1,
+        "questionNumber": 212,
+        "type": "unknown",
+        "question": "-\nYou have a large dataset that contains motor vehicle sales data.\nYou need to train an automated machine learning (automated ML) model to predict vehicle sale values based on the type of\nvehicle.\nWhich task should you select? To answer, select the appropriate task in the answer area.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 213,
+        "topic": 1,
+        "questionNumber": 213,
+        "type": "unknown",
+        "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 214,
+        "topic": 1,
+        "questionNumber": 214,
+        "type": "multiple-choice",
+        "question": "You need to convert receipts into transactions in a spreadsheet. The spreadsheet must include the date of the transaction, the\nmerchant, the total spent, and any taxes paid.\nWhich Azure AI service should you use?",
+        "options": [
+            "A. Custom Vision",
+            "B. Form Recognizer",
+            "C. Face",
+            "D. Language"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 215,
+        "topic": 1,
+        "questionNumber": 215,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 216,
+        "topic": 1,
+        "questionNumber": 216,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 217,
+        "topic": 1,
+        "questionNumber": 217,
+        "type": "multiple-choice",
+        "question": "You have a security system that analyzes images from CCTV to provide authorized staff entry into restricted area.\nWhich type of computer vision does the system use?",
+        "options": [
+            "A. optical character recognition (OCR)",
+            "B. semantic segmentation",
+            "C. facial detection and facial recognition",
+            "D. image analysis"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 218,
+        "topic": 1,
+        "questionNumber": 218,
+        "type": "multiple-choice",
+        "question": "For which two workloads can you use computer vision? Each correct answer presents a complete solution.\nNOTE: Each correct selection is worth one point.",
+        "options": [
+            "A. assigning the color pixels in an image to object names",
+            "B. detecting inconsistencies and anomalies in a stream of data",
+            "C. creating visual representations of numerical data",
+            "D. creating photorealistic images by using three-dimensional models",
+            "E. describing the contents of an image"
+        ],
+        "correctAnswer": "AE",
+        "explanation": ""
+    },
+    {
+        "id": 219,
+        "topic": 1,
+        "questionNumber": 219,
+        "type": "multiple-choice",
+        "question": "You have an app that identifies the coordinates of a product in an image of a supermarket shelf.\nWhich service does the app use?",
+        "options": [
+            "A. Custom Vision classification",
+            "B. Custom Vision object detection",
+            "C. Computer Vision Read",
+            "D. Computer Vision optical character recognition (OCR)"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 220,
+        "topic": 1,
+        "questionNumber": 220,
+        "type": "unknown",
+        "question": "HOTSPOT -\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 221,
+        "topic": 1,
+        "questionNumber": 221,
+        "type": "multiple-choice",
+        "question": "You need to build an image tagging solution for social media that tags images of your friends automatically.\nWhich Azure Cognitive Services service should you use?",
+        "options": [
+            "A. Face",
+            "B. Form Recognizer",
+            "C. Language",
+            "D. Computer Vision"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 222,
+        "topic": 1,
+        "questionNumber": 222,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 223,
+        "topic": 1,
+        "questionNumber": 223,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nYou have an app that identifies birds in images. The app performs the following tasks:\n• Identifies the location of the birds in the image\n• Identifies the species of the birds in the image\nWhich type of computer vision does each task use? To answer, select the appropriate options in the answer area.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 224,
+        "topic": 1,
+        "questionNumber": 224,
+        "type": "multiple-choice",
+        "question": "You have a solution that reads manuscripts in different languages and categorizes the manuscripts based on topic.\nWhich types of natural language processing (NLP) workloads does the solution use?",
+        "options": [
+            "A. speech recognition and entity recognition",
+            "B. speech recognition and language modeling",
+            "C. translation and key phrase extraction",
+            "D. translation and sentiment analysis"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 225,
+        "topic": 1,
+        "questionNumber": 225,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 226,
+        "topic": 1,
+        "questionNumber": 226,
+        "type": "multiple-choice",
+        "question": "You have 100 instructional videos that do NOT contain any audio. Each instructional video has a script.\nYou need to generate a narration audio file for each video based on the script.\nWhich type of workload should you use?",
+        "options": [
+            "A. language modeling",
+            "B. speech recognition",
+            "C. speech synthesis",
+            "D. translation"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 227,
+        "topic": 1,
+        "questionNumber": 227,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 228,
+        "topic": 1,
+        "questionNumber": 228,
+        "type": "multiple-choice",
+        "question": "Which AI service can you use to extract intent from a user input such as “Call me back later”?",
+        "options": [
+            "A. Azure Cognitive Search",
+            "B. Translator",
+            "C. Language",
+            "D. Speech"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 229,
+        "topic": 1,
+        "questionNumber": 229,
+        "type": "multiple-choice",
+        "question": "You are building a Language Understanding model for an e-commerce business.\nYou need to ensure that the model detects when utterances are outside the intended scope of the model.\nWhat should you do?",
+        "options": [
+            "A. Export the model",
+            "B. Add utterances to the None intent",
+            "C. Create a prebuilt task entity",
+            "D. Create a new model"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 230,
+        "topic": 1,
+        "questionNumber": 230,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 231,
+        "topic": 1,
+        "questionNumber": 231,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nFor each of the following statement, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 232,
+        "topic": 1,
+        "questionNumber": 232,
+        "type": "multiple-choice",
+        "question": "What is an example of the Microsoft responsible AI principle of transparency?",
+        "options": [
+            "A. ensuring that opportunities are allocated equally to all applicants",
+            "B. helping users understand the decisions made by an AI system",
+            "C. ensuring that developers are accountable for the solutions they create",
+            "D. ensuring that the privileged data of users is stored in a secure manner"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 233,
+        "topic": 1,
+        "questionNumber": 233,
+        "type": "multiple-choice",
+        "question": "You need to provide customers with the ability to query the status of orders by using phones, social media, or digital assistants.\nWhat should you use?",
+        "options": [
+            "A. an Azure Machine Learning model",
+            "B. the Translator service",
+            "C. a Form Recognizer model",
+            "D. Azure Bot Service"
+        ],
+        "correctAnswer": "D",
+        "explanation": ""
+    },
+    {
+        "id": 234,
+        "topic": 1,
+        "questionNumber": 234,
+        "type": "multiple-choice",
+        "question": "You plan to build a conversational AI solution that can be surfaced in Microsoft Teams, Microsoft Cortana, and Amazon Alexa.\nWhich service should you use?",
+        "options": [
+            "A. Azure Bot Service",
+            "B. Azure Cognitive Search",
+            "C. Speech",
+            "D. Language service"
+        ],
+        "correctAnswer": "A",
+        "explanation": ""
+    },
+    {
+        "id": 235,
+        "topic": 1,
+        "questionNumber": 235,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nFor each of the following statements, select Yes if the statement is true. Otherwise, select No.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 236,
+        "topic": 1,
+        "questionNumber": 236,
+        "type": "multiple-choice",
+        "question": "Which Azure Cognitive Services service can be used to identify documents that contain sensitive information?",
+        "options": [
+            "A. Custom Vision",
+            "B. Conversational Language Understanding",
+            "C. Form Recognizer"
+        ],
+        "correctAnswer": "C",
+        "explanation": ""
+    },
+    {
+        "id": 237,
+        "topic": 1,
+        "questionNumber": 237,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 238,
+        "topic": 1,
+        "questionNumber": 238,
+        "type": "multiple-choice",
+        "question": "A smart device that responds to the question “What is the stock price of Contoso. Ltd.?” is an example of which AI workload?",
+        "options": [
+            "A. knowledge mining",
+            "B. natural language processing",
+            "C. computer vision",
+            "D. anomaly detection"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 239,
+        "topic": 1,
+        "questionNumber": 239,
+        "type": "unknown",
+        "question": "DRAG DROP\n-\nMatch the machine learning models to the appropriate descriptions.\nTo answer, drag the appropriate model from the column on the left to its description on the right. Each model may be used once,\nmore than once, or not at all.\nNOTE: Each correct match is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 240,
+        "topic": 1,
+        "questionNumber": 240,
+        "type": "multiple-choice",
+        "question": "You are building a tool that will process images from retail stores and identify the products of competitors.\nThe solution must be trained on images provided by your company.\nWhich Azure AI service should you use?",
+        "options": [
+            "A. Form Recognizer",
+            "B. Custom Vision",
+            "C. Face",
+            "D. Computer Vision"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 241,
+        "topic": 1,
+        "questionNumber": 241,
+        "type": "unknown",
+        "question": "HOTSPOT\n-\nSelect the answer that correctly completes the sentence.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 242,
+        "topic": 1,
+        "questionNumber": 242,
+        "type": "multiple-choice",
+        "question": "Predicting agricultural yields based on weather conditions and soil quality measurements is an example of which type of machine\nlearning model?",
+        "options": [
+            "A. classification",
+            "B. regression",
+            "C. clustering"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 243,
+        "topic": 1,
+        "questionNumber": 243,
+        "type": "multiple-choice",
+        "question": "You need to identify street names based on street signs in photographs.\nWhich type of computer vision should you use?",
+        "options": [
+            "A. object detection",
+            "B. optical character recognition (OCR)",
+            "C. image classification",
+            "D. facial recognition"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 244,
+        "topic": 1,
+        "questionNumber": 244,
+        "type": "unknown",
+        "question": "DRAG DROP\n-\nMatch the types of computer vision workloads to the appropriate scenarios.\nTo answer, drag the appropriate workload type from the column on the left to its scenario on the right. Each workload type may\nbe used once, more than once, or not at all.\nNOTE: Each correct selection is worth one point.",
+        "options": [],
+        "correctAnswer": "",
+        "explanation": ""
+    },
+    {
+        "id": 245,
+        "topic": 1,
+        "questionNumber": 245,
+        "type": "multiple-choice",
+        "question": "You have a bot that identifies the brand names of products in images of supermarket shelves.\nWhich service does the bot use?",
+        "options": [
+            "A. AI enrichment for Azure Search capabilities",
+            "B. Computer Vision Image Analysis capabilities",
+            "C. Custom Vision Image Classification capabilities",
+            "D. Language Understanding capabilities"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    },
+    {
+        "id": 246,
+        "topic": 1,
+        "questionNumber": 246,
+        "type": "multiple-choice",
+        "question": "You are developing a chatbot solution in Azure.\nWhich service should you use to determine a user’s intent?",
+        "options": [
+            "A. Translator",
+            "B. Language",
+            "C. Azure Cognitive Search",
+            "D. Speech"
+        ],
+        "correctAnswer": "B",
+        "explanation": ""
+    }
+]
