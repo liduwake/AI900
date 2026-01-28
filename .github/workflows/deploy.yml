@@ -33,6 +33,9 @@ jobs:
         run: npm install
 
       - name: Build
+        env:
+          VITE_SUPABASE_URL: https://ifdxfmftpwwgngnvwghk.supabase.co
+          VITE_SUPABASE_ANON_KEY: sb_publishable_pvPqbVWOoEr6_MrzOHYRaA_KIObORek
         run: npm run build
 
       - name: Upload artifact
