@@ -1,10 +1,11 @@
-name: Build and Deploy
+name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: ["main"]
   workflow_dispatch:
 
+# 关键点：这里给了机器人发布网站的权限
 permissions:
   contents: read
   pages: write
@@ -21,14 +22,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node
+      - name: Set up Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm ci
+        # 如果你有 package-lock.json，这里用 npm ci 更好；如果没有，用 npm install
+        run: npm install
 
       - name: Build
         run: npm run build
@@ -36,7 +38,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          # 注意：Vite 默认打包输出到 dist 文件夹
+          path: './dist'
 
   deploy:
     environment:
