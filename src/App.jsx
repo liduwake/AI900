@@ -1,172 +1,63 @@
-import { useState } from 'react'
-import questionsData from './questions.json'
+import { useState, useEffect } from 'react'
+import { BrowserRouter, Routes, Route, Navigate, Link } from 'react-router-dom'
+import { supabase } from './lib/supabase'
+import Login from './pages/Login'
+import Quiz from './pages/Quiz'
+import Dashboard from './pages/Dashboard'
 
 function App() {
-  const [questions] = useState(questionsData);
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [userSelections, setUserSelections] = useState({}); // { index: { selectedIndices: [], isAnswered: bool, isCorrect: bool } }
+  const [session, setSession] = useState(null)
 
-  if (questions.length === 0) {
-    return <div className="app-container">Loading questions...</div>;
-  }
+  // 1. Monitor Auth State
+  useEffect(() => {
+    supabase.auth.getSession().then(({ data: { session } }) => {
+      setSession(session)
+    })
 
-  const currentQuestion = questions[currentIndex];
-  const currentSelection = userSelections[currentIndex] || { selectedIndices: [], isAnswered: false, isCorrect: null };
+    const {
+      data: { subscription },
+    } = supabase.auth.onAuthStateChange((_event, session) => {
+      setSession(session)
+    })
 
-  const handleOptionClick = (optionIndex) => {
-    if (currentSelection.isAnswered) return;
+    return () => subscription.unsubscribe()
+  }, [])
 
-    const isMultiSelect = checkIsMultiSelect(currentQuestion.correctAnswer);
-    let newSelectedIndices;
+  // 2. Track Site Visits (Simple Analytics)
+  useEffect(() => {
+    const logVisit = async () => {
+      await supabase.from('site_visits').insert({
+        page_path: window.location.pathname,
+        user_id: session?.user?.id || null // Trace user if logged in, else null
+      });
+    };
 
-    if (isMultiSelect) {
-      if (currentSelection.selectedIndices.includes(optionIndex)) {
-        newSelectedIndices = currentSelection.selectedIndices.filter(i => i !== optionIndex);
-      } else {
-        newSelectedIndices = [...currentSelection.selectedIndices, optionIndex];
-      }
-    } else {
-      newSelectedIndices = [optionIndex];
-    }
-
-    setUserSelections(prev => ({
-      ...prev,
-      [currentIndex]: {
-        ...currentSelection,
-        selectedIndices: newSelectedIndices
-      }
-    }));
-  };
-
-  const handleSubmit = () => {
-    if (currentSelection.selectedIndices.length === 0) {
-      alert("Please select at least one option.");
-      return;
-    }
-
-    // Check Logic
-    // 1. Get correct keys
-    const correctKeys = currentQuestion.correctAnswer.split(/[,，\s]+/).map(s => s.trim().toUpperCase()[0]);
-
-    // 2. Get user keys
-    // Assumes options are plain strings like "A. ...", "B. ..."
-    const userKeys = currentSelection.selectedIndices.map(i => {
-      const optionText = currentQuestion.options[i];
-      return optionText.trim().charAt(0).toUpperCase();
-    });
-
-    // 3. Compare
-    const isCorrect = (correctKeys.length === userKeys.length) &&
-      correctKeys.every(k => userKeys.includes(k));
-
-    setUserSelections(prev => ({
-      ...prev,
-      [currentIndex]: {
-        ...currentSelection,
-        isAnswered: true,
-        isCorrect: isCorrect
-      }
-    }));
-  };
-
-  const handlePrev = () => {
-    if (currentIndex > 0) setCurrentIndex(prev => prev - 1);
-  };
-
-  const handleNext = () => {
-    if (currentIndex < questions.length - 1) setCurrentIndex(prev => prev + 1);
-  };
-
-  function checkIsMultiSelect(answerString) {
-    if (!answerString) return false;
-    if (answerString.includes(',') || answerString.includes('，')) return true;
-    return false;
-  }
+    // Log once per session/load
+    logVisit();
+  }, [session]); // Re-log if session changes (e.g. login)
 
   return (
-    <div className="app-container">
-      <header>
-        <h1>AI-900 Practice</h1>
-        <div id="question-counter">Question {currentIndex + 1} / {questions.length}</div>
-      </header>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
+      <nav style={{ position: 'absolute', top: '10px', right: '10px', display: 'flex', gap: '10px' }}>
+        {session && <Link to="/dashboard" style={{ textDecoration: 'none', color: '#0078D4' }}>Dashboard</Link>}
+        {session && <Link to="/" style={{ textDecoration: 'none', color: '#0078D4' }}>Quiz</Link>}
+      </nav>
 
-      <div id="quiz-container">
-        <div className="question-card">
-          <div className="question-text">
-            <span className="question-topic">Topic {currentQuestion.topic}</span>
-            {currentQuestion.question}
-          </div>
-
-          <div className="options-container">
-            {currentQuestion.options && currentQuestion.options.map((option, idx) => {
-              const isSelected = currentSelection.selectedIndices.includes(idx);
-              const isAnswered = currentSelection.isAnswered;
-              let className = "option";
-
-              if (isSelected) className += " selected";
-              if (isAnswered) {
-                className += " disabled";
-                if (isSelected) {
-                  className += currentSelection.isCorrect ? " correct" : " incorrect";
-                }
-              }
-
-              return (
-                <div
-                  key={idx}
-                  className={className}
-                  onClick={() => handleOptionClick(idx)}
-                >
-                  {option}
-                </div>
-              );
-            })}
-          </div>
-
-          {currentSelection.isAnswered && (
-            <div className={`feedback ${currentSelection.isCorrect ? 'correct' : 'incorrect'}`}>
-              <strong>{currentSelection.isCorrect ? '回答正确！' : '回答错误。'}</strong>
-              <div className="explanation">
-                <strong>解析：</strong><br />
-                {currentQuestion.explanation || 'No explanation available.'}
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-
-      <footer>
-        <button
-          className="nav-btn"
-          onClick={handlePrev}
-          disabled={currentIndex === 0}
-        >
-          Previous
-        </button>
-
-        {!currentSelection.isAnswered ? (
-          <button
-            className="action-btn"
-            onClick={handleSubmit}
-            disabled={currentSelection.isAnswered}
-          >
-            Submit Answer
-          </button>
-        ) : (
-          <button className="action-btn" disabled>
-            已提交
-          </button>
-        )}
-
-        <button
-          className="nav-btn"
-          onClick={handleNext}
-          disabled={currentIndex === questions.length - 1}
-        >
-          Next
-        </button>
-      </footer>
-    </div>
+      <Routes>
+        <Route
+          path="/"
+          element={session ? <Quiz session={session} /> : <Navigate to="/login" />}
+        />
+        <Route
+          path="/login"
+          element={!session ? <Login /> : <Navigate to="/" />}
+        />
+        <Route
+          path="/dashboard"
+          element={session ? <Dashboard session={session} /> : <Navigate to="/login" />}
+        />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

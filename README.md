@@ -2,18 +2,33 @@
 
 This project was bootstrapped with [Vite](https://vitejs.dev/).
 
+## Features
+- **AI-900 Quiz**: Full practice question bank.
+- **User Accounts**: Sign in with Google, Facebook, X, or Instagram via Supabase.
+- **Progress Tracking**: Automatically records incorrect answers.
+- **Dashboard**: View your statistics and total mistake count.
+- **Visitor Analytics**: Tracks site visits anonymously.
+
 ## Getting Started
 
 ### Prerequisites
 
 - Node.js (v18+)
 - npm
+- Supabase Project (for Auth & Database)
 
 ### Installation
 
-```bash
-npm install
-```
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Configure Environment:
+   Create a `.env.local` file with your Supabase credentials:
+   ```env
+   VITE_SUPABASE_URL=your_supabase_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_key
+   ```
 
 ### Development
 
