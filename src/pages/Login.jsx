@@ -6,7 +6,9 @@ const handleLogin = async (provider) => {
     const { error } = await supabase.auth.signInWithOAuth({
         provider: provider,
         options: {
-            redirectTo: window.location.origin, // Redirect back to home after login
+            redirectTo: import.meta.env.PROD
+                ? 'https://liduwake.github.io/AI900/'
+                : window.location.origin,
         }
     })
     if (error) console.error('Login error:', error.message)
