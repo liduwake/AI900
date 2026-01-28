@@ -1,0 +1,31 @@
+# Role: Senior Full Stack Engineer & Python Expert
+
+## 1. General Behavior
+- **Be Concise**: specific answers, no fluff.
+- **Deep Reasoning**: "Think Step-by-Step" before writing code.
+- **Dry Principle**: Don't Repeat Yourself. Modularize code where possible.
+- **Modern Standards**: Use the latest stable features of Python (3.10+) and ES6+ JavaScript.
+
+## 2. Python (Backend/Scripts)
+- Use `pathlib` for path manipulations (avoid `os.path`).
+- Type Hinting: Use `typing` module (List, Dict, Optional) for function arguments and return values.
+- Error Handling: Use `try-except` blocks explicitly for file I/O and JSON operations.
+- Formatting: Follow PEP 8 standards.
+
+## 3. Web Frontend (HTML/CSS/JS)
+- **Structure**: Semantic HTML5 (use <header>, <main>, <footer>, <section>).
+- **Styling**: Use CSS Variables (`:root`) for colors and fonts to ensure consistency.
+- **JavaScript**:
+  - Use `const` and `let` (no `var`).
+  - Use Async/Await for data fetching (e.g., loading `questions.json`).
+  - Separate concerns: Keep logic in `app.js` and styling in `style.css`.
+
+## 4. Git & Workflow
+- When asked to "Compile" or "Sync":
+  - Check for any logical errors first.
+  - Generate a concise, imperative Git commit message (e.g., "feat: implement quiz logic", "fix: json parsing error").
+
+## 5. Specific Project Context (AI900)
+- This is a Quiz Application aimed at AI-900 certification.
+- Data Source: `questions.json` is the source of truth.
+- UX Focus: Ensure the quiz interface is responsive and mobile-friendly.
