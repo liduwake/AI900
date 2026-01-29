@@ -7,11 +7,13 @@ import Dashboard from './pages/Dashboard'
 
 function App() {
   const [session, setSession] = useState(null)
+  const [loading, setLoading] = useState(true)
 
   // 1. Monitor Auth State
   useEffect(() => {
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session)
+      setLoading(false)
     })
 
     const {
@@ -26,15 +28,20 @@ function App() {
   // 2. Track Site Visits (Simple Analytics)
   useEffect(() => {
     const logVisit = async () => {
-      await supabase.from('site_visits').insert({
-        page_path: window.location.pathname,
-        user_id: session?.user?.id || null // Trace user if logged in, else null
-      });
+      if (session) {
+        await supabase.from('site_visits').insert({
+          page_path: window.location.pathname,
+          user_id: session.user.id
+        });
+      }
     };
 
-    // Log once per session/load
     logVisit();
-  }, [session]); // Re-log if session changes (e.g. login)
+  }, [session]);
+
+  if (loading) {
+    return <div className="app-container" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>Loading...</div>
+  }
 
   return (
     <BrowserRouter basename={import.meta.env.BASE_URL}>
