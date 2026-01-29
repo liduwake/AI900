@@ -39,7 +39,10 @@ export default function Dashboard({ session }) {
                         <p>Total Mistakes Recorded: <strong>{mistakeCount}</strong></p>
                     )}
                     <br />
-                    <button className="action-btn" onClick={() => navigate('/')}>Go to Quiz</button>
+                    <div style={{ display: 'flex', gap: '10px' }}>
+                        <button className="action-btn" onClick={() => navigate('/')}>Resume Standard Quiz</button>
+                        <button className="action-btn" style={{ backgroundColor: '#d9534f' }} onClick={() => navigate('/', { state: { mode: 'mistakes' } })}>Review Mistakes</button>
+                    </div>
                 </div>
 
                 <div style={{ marginTop: '30px' }}>
