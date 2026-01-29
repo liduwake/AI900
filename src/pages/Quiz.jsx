@@ -234,9 +234,12 @@ export default function Quiz({ session }) {
         <div className="app-container">
             <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
-                    <h1>AI-900 Practice</h1>
+                    <h1>AI-900 Practice {mode === 'mistakes' ? '(Mistake Review)' : ''}</h1>
                     <div id="question-counter">
-                        Question {currentIndex + 1} / {questionsData.length}
+                        {mode === 'mistakes'
+                            ? `Mistake ${mistakeIndices.indexOf(currentIndex) + 1} / ${mistakeIndices.length}`
+                            : `Question ${currentIndex + 1} / ${questionsData.length}`
+                        }
                         <span style={{ marginLeft: '10px', fontSize: '0.8em' }}>
                             <a href="#" onClick={(e) => { e.preventDefault(); navigate('/other'); }} style={{ color: '#666' }}>
                                 (View Other/Excluded)
