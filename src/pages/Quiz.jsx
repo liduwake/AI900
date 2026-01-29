@@ -280,11 +280,20 @@ export default function Quiz({ session }) {
                         <div className={`feedback ${currentSelection.isCorrect ? 'correct' : 'natural'}`} style={{ marginTop: '20px' }}>
                             <div style={{ color: '#2c3e50' }}>
                                 <strong>Correct Answer:</strong>
-                                <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit', background: 'none', border: 'none', padding: 0 }}>{currentQuestion.correctAnswer}</pre>
+                                {/* Only show the simple Correct Answer line if it's SHORT (likely a Letter A/B/C) */}
+                                {/* If it's long (Study Mode), we merge it into explanation below for better reading */}
+                                {currentQuestion.correctAnswer.length < 10 && (
+                                    <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit', background: 'none', border: 'none', padding: 0 }}>{currentQuestion.correctAnswer}</pre>
+                                )}
                             </div>
                             <div className="explanation" style={{ marginTop: '15px' }}>
                                 <strong>Explanation:</strong><br />
-                                {currentQuestion.explanation || 'No explanation available.'}
+                                {currentQuestion.correctAnswer.length >= 10 && (
+                                    <div style={{ marginBottom: '10px', whiteSpace: 'pre-wrap' }}>
+                                        {currentQuestion.correctAnswer}
+                                    </div>
+                                )}
+                                {currentQuestion.explanation || ''}
                             </div>
                         </div>
                     )}
