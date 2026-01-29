@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
 import { supabase } from '../lib/supabase'
+import { useNavigate } from 'react-router-dom'
 
 export default function Dashboard({ session }) {
     const [mistakeCount, setMistakeCount] = useState(0);
     const [loading, setLoading] = useState(true);
+    const navigate = useNavigate();
 
     useEffect(() => {
         async function fetchStats() {
@@ -37,7 +39,7 @@ export default function Dashboard({ session }) {
                         <p>Total Mistakes Recorded: <strong>{mistakeCount}</strong></p>
                     )}
                     <br />
-                    <button className="action-btn" onClick={() => window.location.href = '/'}>Go to Quiz</button>
+                    <button className="action-btn" onClick={() => navigate('/')}>Go to Quiz</button>
                 </div>
 
                 <div style={{ marginTop: '30px' }}>
