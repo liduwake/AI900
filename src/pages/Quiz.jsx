@@ -204,6 +204,10 @@ export default function Quiz({ session }) {
                             <a href="#" onClick={(e) => { e.preventDefault(); navigate('/other'); }} style={{ color: '#666' }}>
                                 (View Other/Excluded)
                             </a>
+                            {' | '}
+                            <a href="#" onClick={(e) => { e.preventDefault(); navigate('/dashboard'); }} style={{ color: '#666' }}>
+                                (Mistakes)
+                            </a>
                         </span>
                     </div>
                 </div>
