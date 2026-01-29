@@ -3,12 +3,13 @@ import { Facebook, Twitter, Instagram, Mail } from 'lucide-react' // Using Mail 
 
 // Helper for Social Login
 const handleLogin = async (provider) => {
+    // Construct the redirect URL dynamically based on the current environment and base path
+    const redirectTo = new URL(import.meta.env.BASE_URL, window.location.origin).toString();
+
     const { error } = await supabase.auth.signInWithOAuth({
         provider: provider,
         options: {
-            redirectTo: import.meta.env.PROD
-                ? 'https://liduwake.github.io/AI900/'
-                : window.location.origin,
+            redirectTo: redirectTo,
         }
     })
     if (error) console.error('Login error:', error.message)
