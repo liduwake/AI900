@@ -25,14 +25,33 @@ function App() {
     return () => subscription.unsubscribe()
   }, [])
 
-  // 2. Track Site Visits (Simple Analytics)
+  // 2. Track Site Visits (Debounced: Max 1 per day)
   useEffect(() => {
     const logVisit = async () => {
-      if (session) {
-        await supabase.from('site_visits').insert({
-          page_path: window.location.pathname,
-          user_id: session.user.id
-        });
+      if (!session?.user?.id) return;
+
+      const today = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
+      const storageKey = `visit_log_${session.user.id}`;
+      const lastLog = localStorage.getItem(storageKey);
+
+      // Optimization: If already logged today, SKIP network request entirely
+      if (lastLog === today) {
+        console.log('[Analytics] Visit already logged for today. Skipping.');
+        return;
+      }
+
+      console.log('[Analytics] Logging daily visit...');
+      const { error } = await supabase.from('daily_visits').insert({
+        user_id: session.user.id,
+        visit_date: today
+      });
+
+      // If success or "duplicate key" violation (meaning DB already has it), update local storage
+      // Error code 23505 is PostgreSQL unique_violation
+      if (!error || error.code === '23505') {
+        localStorage.setItem(storageKey, today);
+      } else {
+        console.error('[Analytics] Failed to log visit:', error);
       }
     };
 

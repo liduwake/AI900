@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import questionsData from '../questions.json'
 import { supabase } from '../lib/supabase'
+import { syncManager } from '../lib/sync'
 
 export default function Quiz({ session }) {
     const [questions] = useState(questionsData);
@@ -66,20 +67,18 @@ export default function Quiz({ session }) {
             }
         }));
 
-        // Log Mistake to Supabase if wrong
+        // Log Mistake (Refactored for Offline/Batching)
         if (!isCorrect && session?.user) {
             const wrongAnswerText = currentSelection.selectedIndices.map(i => currentQuestion.options[i]).join('; ');
 
-            const { error } = await supabase
-                .from('mistakes')
-                .insert({
-                    user_id: session.user.id,
-                    question_index: currentIndex,
-                    question_text: currentQuestion.question.substring(0, 100) + "...", // Store brief snapshot
-                    wrong_answer: wrongAnswerText
-                });
-
-            if (error) console.error("Error saving mistake:", error);
+            // Use SyncManager instead of direct DB call
+            // This writes to LocalStorage first and syncs in batches
+            syncManager.addMistake({
+                user_id: session.user.id,
+                question_index: currentIndex,
+                question_text: currentQuestion.question.substring(0, 100) + "...",
+                wrong_answer: wrongAnswerText
+            });
         }
     };
 
