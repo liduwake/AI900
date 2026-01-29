@@ -2,11 +2,27 @@ import { useState, useEffect } from 'react'
 import questionsData from '../questions.json'
 import { supabase } from '../lib/supabase'
 import { syncManager } from '../lib/sync'
+import { useNavigate } from 'react-router-dom'
 
 export default function Quiz({ session }) {
-    const [questions] = useState(questionsData);
+    const navigate = useNavigate();
 
-    // Initialize state from local storage or defaults
+    // Lazy load valid questions (filtering out excluded ones)
+    // NOTE: This 'state' variable is defined but not directly used in the current logic for question navigation.
+    // The navigation (currentIndex, handlePrev, handleNext) operates on the full questionsData array
+    // and dynamically skips excluded indices. This 'state' might be a remnant or for future use.
+    const [state, setState] = useState(() => {
+        const excludedJson = localStorage.getItem('quiz_excludedIndices');
+        const excludedIndices = excludedJson ? JSON.parse(excludedJson) : [];
+        const validQuestionIndices = questionsData.map((_, i) => i).filter(i => !excludedIndices.includes(i));
+
+        return {
+            validIndices: validQuestionIndices,
+            // Map the "current index" of the filtered list to the "real index" of the full list
+            pointer: 0
+        };
+    });
+
     const [currentIndex, setCurrentIndex] = useState(() => {
         const savedIndex = localStorage.getItem('quiz_currentIndex');
         return savedIndex ? parseInt(savedIndex, 10) : 0;
@@ -17,7 +33,7 @@ export default function Quiz({ session }) {
         return savedSelections ? JSON.parse(savedSelections) : {};
     });
 
-    // Save to local storage whenever state changes
+    // Save state
     useEffect(() => {
         localStorage.setItem('quiz_currentIndex', currentIndex);
     }, [currentIndex]);
@@ -26,11 +42,28 @@ export default function Quiz({ session }) {
         localStorage.setItem('quiz_userSelections', JSON.stringify(userSelections));
     }, [userSelections]);
 
-    if (questions.length === 0) {
-        return <div className="app-container">Loading questions...</div>;
+    // Derived state for current question
+    // If the saved currentIndex is in the excluded list (removed recently), we need to find the nearest valid one
+    // But for simplicity, we treat currentIndex as the index in the FULL list to assume stability.
+    // If the current index is excluded, we skip forward.
+
+    useEffect(() => {
+        const excludedJson = localStorage.getItem('quiz_excludedIndices');
+        const excludedIndices = excludedJson ? JSON.parse(excludedJson) : [];
+        if (excludedIndices.includes(currentIndex)) {
+            // If we landed on an excluded question, move next
+            if (currentIndex < questionsData.length - 1) {
+                setCurrentIndex(c => c + 1);
+            }
+        }
+    }, [currentIndex]);
+
+    const currentQuestion = questionsData[currentIndex];
+
+    if (!currentQuestion) {
+        return <div className="app-container">Loading or No Questions Remaining...</div>;
     }
 
-    const currentQuestion = questions[currentIndex];
     const currentSelection = userSelections[currentIndex] || { selectedIndices: [], isAnswered: false, isCorrect: null };
 
     const handleOptionClick = (optionIndex) => {
@@ -107,12 +140,47 @@ export default function Quiz({ session }) {
         }
     };
 
+    const handleExclude = () => {
+        if (confirm('Move this question to "Other Quiz" bank? It will be hidden from this view.')) {
+            const excludedJson = localStorage.getItem('quiz_excludedIndices');
+            const excludedIndices = excludedJson ? JSON.parse(excludedJson) : [];
+            const newExcludes = [...excludedIndices, currentIndex];
+            localStorage.setItem('quiz_excludedIndices', JSON.stringify(newExcludes));
+
+            // Move to next question automatically
+            if (currentIndex < questionsData.length - 1) {
+                setCurrentIndex(prev => prev + 1);
+            } else {
+                // If last question, just reload to trigger effect
+                window.location.reload();
+            }
+        }
+    }
+
     const handlePrev = () => {
-        if (currentIndex > 0) setCurrentIndex(prev => prev - 1);
+        // Find previous non-excluded index
+        let newIndex = currentIndex - 1;
+        const excludedJson = localStorage.getItem('quiz_excludedIndices');
+        const excludedIndices = excludedJson ? JSON.parse(excludedJson) : [];
+
+        while (newIndex >= 0 && excludedIndices.includes(newIndex)) {
+            newIndex--;
+        }
+
+        if (newIndex >= 0) setCurrentIndex(newIndex);
     };
 
     const handleNext = () => {
-        if (currentIndex < questions.length - 1) setCurrentIndex(prev => prev + 1);
+        // Find next non-excluded index
+        let newIndex = currentIndex + 1;
+        const excludedJson = localStorage.getItem('quiz_excludedIndices');
+        const excludedIndices = excludedJson ? JSON.parse(excludedJson) : [];
+
+        while (newIndex < questionsData.length && excludedIndices.includes(newIndex)) {
+            newIndex++;
+        }
+
+        if (newIndex < questionsData.length) setCurrentIndex(newIndex);
     };
 
     function checkIsMultiSelect(answerString) {
@@ -130,9 +198,21 @@ export default function Quiz({ session }) {
             <header style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                 <div>
                     <h1>AI-900 Practice</h1>
-                    <div id="question-counter">Question {currentIndex + 1} / {questions.length}</div>
+                    <div id="question-counter">
+                        Question {currentIndex + 1} / {questionsData.length}
+                        <span style={{ marginLeft: '10px', fontSize: '0.8em' }}>
+                            <a href="#" onClick={(e) => { e.preventDefault(); navigate('/other'); }} style={{ color: '#666' }}>
+                                (View Other/Excluded)
+                            </a>
+                        </span>
+                    </div>
                 </div>
-                <button className="nav-btn" style={{ fontSize: '0.8em', padding: '5px 10px' }} onClick={() => supabase.auth.signOut()}>Sign Out</button>
+                <div style={{ display: 'flex', gap: '10px' }}>
+                    <button className="nav-btn" style={{ fontSize: '0.8em', padding: '5px 10px' }} onClick={handleExclude} title="Remove from this bank">
+                        Move to Other
+                    </button>
+                    <button className="nav-btn" style={{ fontSize: '0.8em', padding: '5px 10px' }} onClick={() => supabase.auth.signOut()}>Sign Out</button>
+                </div>
             </header>
 
             <div id="quiz-container">
@@ -208,18 +288,19 @@ export default function Quiz({ session }) {
             </div>
 
             <footer>
-                <button className="nav-btn" onClick={handlePrev} disabled={currentIndex === 0}>Previous</button>
+                <div className="footer-content">
+                    <button className="nav-btn" onClick={handlePrev} disabled={currentIndex === 0}>Previous</button>
 
-                {/* Only show Submit if it's a normal question and not yet answered */}
-                {currentQuestion.options && currentQuestion.options.length > 0 && !currentSelection.isAnswered && (
-                    <button className="action-btn" onClick={handleSubmit}>Submit Answer</button>
-                )}
+                    {/* Only show Submit if it's a normal question and not yet answered */}
+                    {currentQuestion.options && currentQuestion.options.length > 0 && !currentSelection.isAnswered && (
+                        <button className="action-btn" onClick={handleSubmit}>Submit Answer</button>
+                    )}
 
-                {/* For Study Mode or Answered Questions, show Next (already there) */}
-                {/* Visual spacer if submit is hidden */}
-                {(currentSelection.isAnswered || !currentQuestion.options || currentQuestion.options.length === 0) && <div style={{ width: '10px' }}></div>}
+                    {/* Visual spacer if submit is hidden */}
+                    {(currentSelection.isAnswered || !currentQuestion.options || currentQuestion.options.length === 0) && <div style={{ width: '10px' }}></div>}
 
-                <button className="nav-btn" onClick={handleNext} disabled={currentIndex === questions.length - 1}>Next</button>
+                    <button className="nav-btn" onClick={handleNext} disabled={currentIndex === questionsData.length - 1}>Next</button>
+                </div>
             </footer>
         </div>
     )

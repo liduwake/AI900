@@ -35,93 +35,49 @@ body {
   width: 90%;
   max-width: 700px;
   padding: 20px 30px;
+  padding-bottom: 80px;
+  /* Space for fixed footer */
   box-sizing: border-box;
-  color: #333; /* Ensure text color is dark on white background */
-}
-
-header {
-  border-bottom: 1px solid #e0e0e0;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 1.5em;
-  color: #0078D4;
-}
-
-.question-card {
-  margin-bottom: 20px;
-  min-height: 200px;
-}
-
-.question-text {
-  font-size: 1.2em;
-  font-weight: 600;
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.question-topic {
-    font-size: 0.8em; 
-    color: #666; 
-    display:block; 
-    margin-bottom:5px;
-}
-
-.options-container {
-    text-align: left;
-}
-
-.option {
-  display: block;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 12px 15px;
-  margin-bottom: 10px;
-  cursor: pointer;
-  transition: background-color 0.2s, border-color 0.2s;
   color: #333;
+  /* Ensure text color is dark on white background */
+  min-height: 80vh;
+  /* Ensure container takes up most of screen */
+  position: relative;
+  /* Context for absolute positioning if needed */
 }
 
-.option:hover {
-  background-color: #e9f5ff;
-  border-color: #0078D4;
-}
-
-.option.selected {
-  background-color: #cceeff;
-  border-color: #0078D4;
-  font-weight: bold;
-}
-
-.option.correct {
-    background-color: #dff0d8;
-    border-color: #d6e9c6;
-    color: #3c763d;
-}
-
-.option.incorrect {
-    background-color: #f2dede;
-    border-color: #ebccd1;
-    color: #a94442;
-}
-
-.option.disabled {
-    pointer-events: none;
-}
+/* ... existing styles ... */
 
 footer {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding: 15px 30px;
   border-top: 1px solid #e0e0e0;
-  margin-top: 20px;
+
+  /* Fixed positioning */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  /* Opaque background */
+  z-index: 1000;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Center footer content to match container */
+footer>* {
+  /* This structural change might require wrapping buttons in Quiz.jsx, 
+       but for now we'll just keep the footer wide or constrain it */
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
 button {
@@ -139,8 +95,8 @@ button {
 }
 
 .nav-btn:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .action-btn {
@@ -153,8 +109,8 @@ button {
 }
 
 .action-btn:disabled {
-    background-color: #cccccc;
-    cursor: not-allowed;
+  background-color: #cccccc;
+  cursor: not-allowed;
 }
 
 /* Feedback styles */
@@ -164,16 +120,19 @@ button {
   border-radius: 5px;
   text-align: left;
 }
+
 .feedback.correct {
   background-color: #dff0d8;
   color: #3c763d;
   border: 1px solid #d6e9c6;
 }
+
 .feedback.incorrect {
   background-color: #f2dede;
   color: #a94442;
   border: 1px solid #ebccd1;
 }
+
 .explanation {
   margin-top: 10px;
   font-style: italic;
