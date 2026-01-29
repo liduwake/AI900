@@ -124,41 +124,63 @@ export default function Quiz({ session }) {
                         {currentQuestion.question}
                     </div>
 
-                    <div className="options-container">
-                        {currentQuestion.options && currentQuestion.options.map((option, idx) => {
-                            const isSelected = currentSelection.selectedIndices.includes(idx);
-                            const isAnswered = currentSelection.isAnswered;
-                            let className = "option";
+                    {/* RENDER OPTIONS OR STUDY MODE */}
+                    {currentQuestion.options && currentQuestion.options.length > 0 ? (
+                        <div className="options-container">
+                            {currentQuestion.options.map((option, idx) => {
+                                const isSelected = currentSelection.selectedIndices.includes(idx);
+                                const isAnswered = currentSelection.isAnswered;
+                                let className = "option";
 
-                            if (isSelected) className += " selected";
-                            if (isAnswered) {
-                                className += " disabled";
-                                if (isSelected) {
-                                    className += currentSelection.isCorrect ? " correct" : " incorrect";
+                                if (isSelected) className += " selected";
+                                if (isAnswered) {
+                                    className += " disabled";
+                                    if (isSelected) {
+                                        className += currentSelection.isCorrect ? " correct" : " incorrect";
+                                    }
                                 }
-                            }
 
-                            return (
-                                <div
-                                    key={idx}
-                                    className={className}
-                                    onClick={() => handleOptionClick(idx)}
-                                >
-                                    {option}
-                                </div>
-                            );
-                        })}
-                    </div>
+                                return (
+                                    <div
+                                        key={idx}
+                                        className={className}
+                                        onClick={() => handleOptionClick(idx)}
+                                    >
+                                        {option}
+                                    </div>
+                                );
+                            })}
+                        </div>
+                    ) : (
+                        <div className="study-mode" style={{ margin: '20px 0', padding: '15px', background: '#f8f9fa', border: '1px dashed #ccc', borderRadius: '8px' }}>
+                            <p><em>This question involves visual content (Hotspot/Drag & Drop) not available in text format.</em></p>
+                            {!currentSelection.isAnswered ? (
+                                <button className="action-btn" onClick={() => {
+                                    // Mark as answered (correct by default for study mode to not engage mistake logic)
+                                    setUserSelections(prev => ({
+                                        ...prev,
+                                        [currentIndex]: {
+                                            selectedIndices: [],
+                                            isAnswered: true,
+                                            isCorrect: true // Don't log as mistake since they can't answer it
+                                        }
+                                    }));
+                                }}>
+                                    Reveal Answer
+                                </button>
+                            ) : (
+                                <p><strong>Answer Revealed</strong></p>
+                            )}
+                        </div>
+                    )}
 
                     {currentSelection.isAnswered && (
-                        <div className={`feedback ${currentSelection.isCorrect ? 'correct' : 'incorrect'}`}>
-                            <strong>{currentSelection.isCorrect ? 'Correct!' : 'Incorrect.'}</strong>
-                            {!currentSelection.isCorrect && (
-                                <div style={{ marginTop: '5px', color: '#a94442' }}>
-                                    <strong>Correct Answer: {currentQuestion.correctAnswer}</strong>
-                                </div>
-                            )}
-                            <div className="explanation">
+                        <div className={`feedback ${currentSelection.isCorrect ? 'correct' : 'natural'}`} style={{ marginTop: '20px' }}>
+                            <div style={{ color: '#2c3e50' }}>
+                                <strong>Correct Answer:</strong>
+                                <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'inherit', background: 'none', border: 'none', padding: 0 }}>{currentQuestion.correctAnswer}</pre>
+                            </div>
+                            <div className="explanation" style={{ marginTop: '15px' }}>
                                 <strong>Explanation:</strong><br />
                                 {currentQuestion.explanation || 'No explanation available.'}
                             </div>
@@ -170,11 +192,14 @@ export default function Quiz({ session }) {
             <footer>
                 <button className="nav-btn" onClick={handlePrev} disabled={currentIndex === 0}>Previous</button>
 
-                {!currentSelection.isAnswered ? (
-                    <button className="action-btn" onClick={handleSubmit} disabled={currentSelection.isAnswered}>Submit Answer</button>
-                ) : (
-                    <button className="action-btn" disabled>Submitted</button>
+                {/* Only show Submit if it's a normal question and not yet answered */}
+                {currentQuestion.options && currentQuestion.options.length > 0 && !currentSelection.isAnswered && (
+                    <button className="action-btn" onClick={handleSubmit}>Submit Answer</button>
                 )}
+
+                {/* For Study Mode or Answered Questions, show Next (already there) */}
+                {/* Visual spacer if submit is hidden */}
+                {(currentSelection.isAnswered || !currentQuestion.options || currentQuestion.options.length === 0) && <div style={{ width: '10px' }}></div>}
 
                 <button className="nav-btn" onClick={handleNext} disabled={currentIndex === questions.length - 1}>Next</button>
             </footer>
