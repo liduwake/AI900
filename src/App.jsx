@@ -66,12 +66,17 @@ function App() {
   return (
     <Router basename={import.meta.env.BASE_URL}>
       <Routes>
-        <Route
-          path="/dashboard"
-          element={session ? <Dashboard session={session} /> : <Navigate to="/login" />}
-        />
+        <Route path="/login" element={!session ? <Login /> : <Navigate to="/" />} />
+
+        {/* Protected Routes */}
+        <Route path="/" element={session ? <Quiz session={session} /> : <Navigate to="/login" />} />
+        <Route path="/dashboard" element={session ? <Dashboard session={session} /> : <Navigate to="/login" />} />
+        <Route path="/other" element={session ? <OtherQuiz /> : <Navigate to="/login" />} />
+
+        {/* Catch all */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
-    </BrowserRouter>
+    </Router>
   )
 }
 
