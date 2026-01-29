@@ -1,12 +1,30 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import questionsData from '../questions.json'
 import { supabase } from '../lib/supabase'
 import { syncManager } from '../lib/sync'
 
 export default function Quiz({ session }) {
     const [questions] = useState(questionsData);
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const [userSelections, setUserSelections] = useState({});
+
+    // Initialize state from local storage or defaults
+    const [currentIndex, setCurrentIndex] = useState(() => {
+        const savedIndex = localStorage.getItem('quiz_currentIndex');
+        return savedIndex ? parseInt(savedIndex, 10) : 0;
+    });
+
+    const [userSelections, setUserSelections] = useState(() => {
+        const savedSelections = localStorage.getItem('quiz_userSelections');
+        return savedSelections ? JSON.parse(savedSelections) : {};
+    });
+
+    // Save to local storage whenever state changes
+    useEffect(() => {
+        localStorage.setItem('quiz_currentIndex', currentIndex);
+    }, [currentIndex]);
+
+    useEffect(() => {
+        localStorage.setItem('quiz_userSelections', JSON.stringify(userSelections));
+    }, [userSelections]);
 
     if (questions.length === 0) {
         return <div className="app-container">Loading questions...</div>;
