@@ -46,7 +46,16 @@ export default function Quiz({ session }) {
             return;
         }
 
-        const correctKeys = currentQuestion.correctAnswer.split(/[,，\s]+/).map(s => s.trim().toUpperCase()[0]);
+        let correctKeys;
+        const answer = currentQuestion.correctAnswer.trim();
+
+        // Handle compact "ABC" format for multiple choice
+        if (/^[A-Z]+$/.test(answer) && answer.length > 1) {
+            correctKeys = answer.split('');
+        } else {
+            // Handle "A", "A, B", or fallback
+            correctKeys = answer.split(/[,，\s]+/).map(s => s.trim().toUpperCase()[0]);
+        }
 
         // Get user keys
         const userKeys = currentSelection.selectedIndices.map(i => {
@@ -71,8 +80,6 @@ export default function Quiz({ session }) {
         if (!isCorrect && session?.user) {
             const wrongAnswerText = currentSelection.selectedIndices.map(i => currentQuestion.options[i]).join('; ');
 
-            // Use SyncManager instead of direct DB call
-            // This writes to LocalStorage first and syncs in batches
             syncManager.addMistake({
                 user_id: session.user.id,
                 question_index: currentIndex,
@@ -92,7 +99,11 @@ export default function Quiz({ session }) {
 
     function checkIsMultiSelect(answerString) {
         if (!answerString) return false;
+        // Format: "A,B" or "A, B"
         if (answerString.includes(',') || answerString.includes('，')) return true;
+        // Format: "ABC" (Compact keys, strictly uppercase letters)
+        if (/^[A-Z]+$/.test(answerString) && answerString.length > 1) return true;
+
         return false;
     }
 
